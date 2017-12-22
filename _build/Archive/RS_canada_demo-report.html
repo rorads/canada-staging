@@ -1,0 +1,1347 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Title: The Name of the Report &mdash; Global Affairs Canada - Compliance Report 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Global Affairs Canada - Compliance Report 1.0 documentation" href="../index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Global Affairs Canada - Compliance Report
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Setup-and-Data-Acquisition">Setup and Data Acquisition</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Imports-and-Housekeeping">Imports and Housekeeping</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Getting-Original-IATI-Files">Getting Original IATI Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Merging-IATI-Files">Merging IATI Files</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Initial-Validation">Initial Validation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Schema-Validation">Schema Validation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Ruleset-Validation">Ruleset Validation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Method-Overview">Method Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Deliverables">Deliverables</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Deliverable-3.1.1">Deliverable 3.1.1</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Recipient-Countries">Recipient Countries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Participating-Organisations">Participating Organisations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Deliverable-3.1.2">Deliverable 3.1.2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Existence-of-Required-Fields">Existence of Required Fields</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#How-the-Required-Fields-are-Related">How the Required Fields are Related</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Deliverable-3.1.3">Deliverable 3.1.3</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Other-Identifier">Other Identifier</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Transactions">Transactions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Transaction-Provider-Organisation">Transaction Provider Organisation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Transaction-Receiver-Organisation">Transaction Receiver Organisation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Deliverable-3.1.4">Deliverable 3.1.4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Deliverable-3.1.5">Deliverable 3.1.5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Deliverable-3.1.6">Deliverable 3.1.6</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Thematic-Evaluation">Thematic Evaluation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Prescriptions">Prescriptions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Appendix-1:-Data-Workbook">Appendix 1: Data Workbook</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Global Affairs Canada - Compliance Report</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Title: The Name of the Report</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/Archive/RS_canada_demo-report.ipynb.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS for nbsphinx extension */
+
+/* remove conflicting styling from Sphinx themes */
+div.nbinput,
+div.nbinput div.prompt,
+div.nbinput div.input_area,
+div.nbinput div[class*=highlight],
+div.nbinput div[class*=highlight] pre,
+div.nboutput,
+div.nbinput div.prompt,
+div.nbinput div.output_area,
+div.nboutput div[class*=highlight],
+div.nboutput div[class*=highlight] pre {
+    background: none;
+    border: none;
+    padding: 0 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+/* avoid gaps between output lines */
+div.nboutput div[class*=highlight] pre {
+    line-height: normal;
+}
+
+/* input/output containers */
+div.nbinput,
+div.nboutput {
+    display: -webkit-flex;
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+}
+@media (max-width: 540px) {
+    div.nbinput,
+    div.nboutput {
+        flex-direction: column;
+    }
+}
+
+/* input container */
+div.nbinput {
+    padding-top: 5px;
+}
+
+/* last container */
+div.nblast {
+    padding-bottom: 5px;
+}
+
+/* input prompt */
+div.nbinput div.prompt pre {
+    color: #303F9F;
+}
+
+/* output prompt */
+div.nboutput div.prompt pre {
+    color: #D84315;
+}
+
+/* all prompts */
+div.nbinput div.prompt,
+div.nboutput div.prompt {
+    min-width: 8ex;
+    padding-top: 0.4em;
+    padding-right: 0.4em;
+    text-align: right;
+    flex: 0;
+}
+@media (max-width: 540px) {
+    div.nbinput div.prompt,
+    div.nboutput div.prompt {
+        text-align: left;
+        padding: 0.4em;
+    }
+    div.nboutput div.prompt.empty {
+        padding: 0;
+    }
+}
+
+/* disable scrollbars on prompts */
+div.nbinput div.prompt pre,
+div.nboutput div.prompt pre {
+    overflow: hidden;
+}
+
+/* input/output area */
+div.nbinput div.input_area,
+div.nboutput div.output_area {
+    padding: 0.4em;
+    -webkit-flex: 1;
+    flex: 1;
+    overflow: auto;
+}
+@media (max-width: 540px) {
+    div.nbinput div.input_area,
+    div.nboutput div.output_area {
+        width: 100%;
+    }
+}
+
+/* input area */
+div.nbinput div.input_area {
+    border: 1px solid #cfcfcf;
+    border-radius: 2px;
+    background: #f7f7f7;
+}
+
+/* override MathJax center alignment in output cells */
+div.nboutput div[class*=MathJax] {
+    text-align: left !important;
+}
+
+/* override sphinx.ext.pngmath center alignment in output cells */
+div.nboutput div.math p {
+    text-align: left;
+}
+
+/* standard error */
+div.nboutput div.output_area.stderr {
+    background: #fdd;
+}
+
+/* ANSI colors */
+.ansi-black-fg { color: #3E424D; }
+.ansi-black-bg { background-color: #3E424D; }
+.ansi-black-intense-fg { color: #282C36; }
+.ansi-black-intense-bg { background-color: #282C36; }
+.ansi-red-fg { color: #E75C58; }
+.ansi-red-bg { background-color: #E75C58; }
+.ansi-red-intense-fg { color: #B22B31; }
+.ansi-red-intense-bg { background-color: #B22B31; }
+.ansi-green-fg { color: #00A250; }
+.ansi-green-bg { background-color: #00A250; }
+.ansi-green-intense-fg { color: #007427; }
+.ansi-green-intense-bg { background-color: #007427; }
+.ansi-yellow-fg { color: #DDB62B; }
+.ansi-yellow-bg { background-color: #DDB62B; }
+.ansi-yellow-intense-fg { color: #B27D12; }
+.ansi-yellow-intense-bg { background-color: #B27D12; }
+.ansi-blue-fg { color: #208FFB; }
+.ansi-blue-bg { background-color: #208FFB; }
+.ansi-blue-intense-fg { color: #0065CA; }
+.ansi-blue-intense-bg { background-color: #0065CA; }
+.ansi-magenta-fg { color: #D160C4; }
+.ansi-magenta-bg { background-color: #D160C4; }
+.ansi-magenta-intense-fg { color: #A03196; }
+.ansi-magenta-intense-bg { background-color: #A03196; }
+.ansi-cyan-fg { color: #60C6C8; }
+.ansi-cyan-bg { background-color: #60C6C8; }
+.ansi-cyan-intense-fg { color: #258F8F; }
+.ansi-cyan-intense-bg { background-color: #258F8F; }
+.ansi-white-fg { color: #C5C1B4; }
+.ansi-white-bg { background-color: #C5C1B4; }
+.ansi-white-intense-fg { color: #A1A6B2; }
+.ansi-white-intense-bg { background-color: #A1A6B2; }
+
+.ansi-default-inverse-fg { color: #FFFFFF; }
+.ansi-default-inverse-bg { background-color: #000000; }
+
+.ansi-bold { font-weight: bold; }
+.ansi-underline { text-decoration: underline; }
+
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast,
+.nboutput.nblast {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast + .nbinput {
+    margin-top: -19px;
+}
+
+/* nice headers on first paragraph of info/warning boxes */
+.admonition .first {
+    margin: -12px;
+    padding: 6px 12px;
+    margin-bottom: 12px;
+    color: #fff;
+    line-height: 1;
+    display: block;
+}
+.admonition.warning .first {
+    background: #f0b37e;
+}
+.admonition.note .first {
+    background: #6ab0de;
+}
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+</style>
+<div class="section" id="Title:-The-Name-of-the-Report">
+<h1>Title: The Name of the Report<a class="headerlink" href="#Title:-The-Name-of-the-Report" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div>Open Data Services, November 2017</div></blockquote>
+<div class="section" id="Introduction">
+<h2>Introduction<a class="headerlink" href="#Introduction" title="Permalink to this headline">¶</a></h2>
+<p>A Jupyter notebook is a convenient way of combining analysis with
+presentation. It&#8217;s composed of &#8216;cells&#8217; which can either execute code (in
+this case, Python), or include markdown text (which is how this cell has
+been written).</p>
+<div class="section" id="Markdown">
+<h3>Markdown<a class="headerlink" href="#Markdown" title="Permalink to this headline">¶</a></h3>
+<p>Markdown allows writers to format text (i.e. using <em>italics</em>, <strong>bold</strong>),
+include links like <a class="reference external" href="www.wikipedia.org">this one for wikipedia</a>, use
+<code class="docutils literal"><span class="pre">monospace</span></code>, and quote text, like this:</p>
+<blockquote>
+<div>here is some quoted text</div></blockquote>
+<p>It&#8217;s syntax is quite simple. The sentences above were written with the
+following syntax:</p>
+<hr class="docutils" />
+<div class="highlight-markdown"><div class="highlight"><pre><span></span>Markdown allows writers to format text (i.e. using *italics*, **bold**), include links like [this one for wikipedia](www.wikipedia.org), use `monospace`, and quote text, like this:
+
+&gt; here is some quoted text
+</pre></div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="Python">
+<h3>Python<a class="headerlink" href="#Python" title="Permalink to this headline">¶</a></h3>
+<p>In addition to text, Jupyter includes a programming languages too, in
+this case embedding a python kernel which allows the author to write,
+execute and display the output of arbitrary code. For example:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [9]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="c1"># a small python script importing a library which deals with time, and displaying the current date and time</span>
+<span class="kn">import</span> <span class="nn">datetime</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+2017-11-29 17:38:25.043631
+</pre></div></div>
+</div>
+</div>
+</div>
+<div class="section" id="Handling-Data">
+<h2>Handling Data<a class="headerlink" href="#Handling-Data" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="Tables">
+<h3>Tables<a class="headerlink" href="#Tables" title="Permalink to this headline">¶</a></h3>
+<p>The simplest way to look at traditional data is to use a dataframe.
+Think of a CSV file but held as an object rather than viewed in Excel.
+Using a package called Pandas, we can lift a CSV file straight from the
+internet and start analysing it. Let&#8217;s begin with the list of IATI
+publishers collated on the <a class="reference external" href="http://dashboard.iatistandard.org/publishers.html">IATI
+Dashboard</a>, which
+can be downloaded as CSV from this url:
+<a class="reference external" href="http://dashboard.iatistandard.org/publishers.csv">http://dashboard.iatistandard.org/publishers.csv</a></p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [2]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="c1"># Importing the Pandas library and set the maximum number of columns to 30</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s2">&quot;display.max_columns&quot;</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
+
+<span class="c1"># creating a variable for the Publishers data frame</span>
+<span class="n">publishers</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;http://dashboard.iatistandard.org/publishers.csv&quot;</span><span class="p">)</span>
+
+<span class="n">publishers</span> <span class="o">=</span> <span class="n">publishers</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s2">&quot;Publisher Name&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p>First, to get a feel for the data, let&#8217;s look at the first three rows: &gt;
+if you&#8217;re running this notbook live, try changing the number in brackets
+below to display a different number of rows</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [3]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="n">publishers</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>Out[3]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Publisher Registry Id</th>
+      <th>Activities</th>
+      <th>Organisations</th>
+      <th>Files</th>
+      <th>Activity Files</th>
+      <th>Organisation Files</th>
+      <th>Total File Size</th>
+      <th>Reporting Org on Registry</th>
+      <th>Reporting Orgs in Data (count)</th>
+      <th>Reporting Orgs in Data</th>
+      <th>Hierarchies (count)</th>
+      <th>Hierarchies</th>
+    </tr>
+    <tr>
+      <th>Publisher Name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Acid Survivors Foundation</th>
+      <td>_admin</td>
+      <td>2</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>7969</td>
+      <td>PK-VSWA-511-2007</td>
+      <td>2</td>
+      <td>PK-VSWA-511-2007;XI-IATI-VSWA-511-2007</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>ActionAid International</th>
+      <td>aai</td>
+      <td>96</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>395966</td>
+      <td>NL-KVK-27264198</td>
+      <td>1</td>
+      <td>NL-KVK-27264198</td>
+      <td>1</td>
+      <td>null</td>
+    </tr>
+    <tr>
+      <th>Stichting ActionAId</th>
+      <td>aanl</td>
+      <td>4</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>154370</td>
+      <td>NL-KVK-41217595</td>
+      <td>1</td>
+      <td>NL-KVK-41217595</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<p>We can filter and present the data easily, for instance showing only the
+publishers who have published more than 50k activities and only show a
+few columns:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [4]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="c1"># filter out activities with fewer than 50k activities</span>
+<span class="n">fifty_k_activitis</span> <span class="o">=</span> <span class="n">publishers</span><span class="p">[</span><span class="n">publishers</span><span class="p">[</span><span class="s1">&#39;Activities&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">50000</span><span class="p">]</span>
+
+<span class="c1"># present data from the columns we&#39;re interested in</span>
+<span class="n">fifty_k_activitis</span><span class="p">[[</span><span class="s2">&quot;Organisations&quot;</span><span class="p">,</span> <span class="s2">&quot;Activity Files&quot;</span><span class="p">,</span> <span class="s2">&quot;Activities&quot;</span><span class="p">]]</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>Out[4]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Organisations</th>
+      <th>Activity Files</th>
+      <th>Activities</th>
+    </tr>
+    <tr>
+      <th>Publisher Name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>European Commission - Development and Cooperation-EuropeAid</th>
+      <td>1</td>
+      <td>219</td>
+      <td>50007</td>
+    </tr>
+    <tr>
+      <th>Sweden, through Swedish International Development Cooperation Agency (Sida)</th>
+      <td>2</td>
+      <td>164</td>
+      <td>79245</td>
+    </tr>
+    <tr>
+      <th>United States</th>
+      <td>12</td>
+      <td>269</td>
+      <td>130920</td>
+    </tr>
+    <tr>
+      <th>United States Agency for International Development (USAID)</th>
+      <td>0</td>
+      <td>173</td>
+      <td>72022</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<p>We can also quickly perform pivots just as in Excel. The case below
+shows the total activities published by organisations who list different
+numbers of reporting organisations in their files:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [5]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="n">publishers</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span>
+    <span class="n">index</span><span class="o">=</span><span class="s2">&quot;Reporting Orgs in Data (count)&quot;</span><span class="p">,</span>  <span class="c1"># use the column as the new index</span>
+    <span class="n">values</span><span class="o">=</span><span class="s2">&quot;Activity Files&quot;</span><span class="p">,</span>  <span class="c1"># calculate the values based on this column...</span>
+    <span class="n">aggfunc</span><span class="o">=</span><span class="nb">sum</span>  <span class="c1"># ... by summing them</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>Out[5]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Activity Files</th>
+    </tr>
+    <tr>
+      <th>Reporting Orgs in Data (count)</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>4273</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>313</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>39</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>58</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>269</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+</div>
+<div class="section" id="Graphs">
+<h3>Graphs<a class="headerlink" href="#Graphs" title="Permalink to this headline">¶</a></h3>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [6]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">bokeh.plotting</span> <span class="k">import</span> <span class="n">figure</span><span class="p">,</span> <span class="n">output_file</span><span class="p">,</span> <span class="n">show</span>  <span class="c1"># plotting libraries</span>
+<span class="kn">from</span> <span class="nn">bokeh.io</span> <span class="k">import</span> <span class="n">output_notebook</span>  <span class="c1"># allows us to put graphs in notebooks</span>
+<span class="kn">from</span> <span class="nn">bokeh.models</span> <span class="k">import</span> <span class="n">ColumnDataSource</span><span class="p">,</span> <span class="n">HoverTool</span><span class="p">,</span> <span class="n">Axis</span>
+<span class="kn">from</span> <span class="nn">bokeh.charts</span> <span class="k">import</span> <span class="n">Bar</span><span class="p">,</span> <span class="n">output_notebook</span><span class="p">,</span> <span class="n">show</span>
+<span class="n">output_notebook</span><span class="p">(</span><span class="n">hide_banner</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div></div>
+<script type="text/javascript">
+var element = document.currentScript.previousSibling.previousSibling;
+
+(function(global) {
+  function now() {
+    return new Date();
+  }
+
+  var force = true;
+
+  if (typeof (window._bokeh_onload_callbacks) === "undefined" || force === true) {
+    window._bokeh_onload_callbacks = [];
+    window._bokeh_is_loading = undefined;
+  }
+
+
+
+  if (typeof (window._bokeh_timeout) === "undefined" || force === true) {
+    window._bokeh_timeout = Date.now() + 5000;
+    window._bokeh_failed_load = false;
+  }
+
+  var NB_LOAD_WARNING = {'data': {'text/html':
+     "<div style='background-color: #fdd'>\n"+
+     "<p>\n"+
+     "BokehJS does not appear to have successfully loaded. If loading BokehJS from CDN, this \n"+
+     "may be due to a slow or bad network connection. Possible fixes:\n"+
+     "</p>\n"+
+     "<ul>\n"+
+     "<li>re-rerun `output_notebook()` to attempt to load from CDN again, or</li>\n"+
+     "<li>use INLINE resources instead, as so:</li>\n"+
+     "</ul>\n"+
+     "<code>\n"+
+     "from bokeh.resources import INLINE\n"+
+     "output_notebook(resources=INLINE)\n"+
+     "</code>\n"+
+     "</div>"}};
+
+  function display_loaded() {
+    if (window.Bokeh !== undefined) {
+      var el = document.getElementById("");
+      el.textContent = "BokehJS " + Bokeh.version + " successfully loaded.";
+    } else if (Date.now() < window._bokeh_timeout) {
+      setTimeout(display_loaded, 100)
+    }
+  }
+
+  function run_callbacks() {
+    window._bokeh_onload_callbacks.forEach(function(callback) { callback() });
+    delete window._bokeh_onload_callbacks
+    console.info("Bokeh: all callbacks have finished");
+  }
+
+  function load_libs(js_urls, callback) {
+    window._bokeh_onload_callbacks.push(callback);
+    if (window._bokeh_is_loading > 0) {
+      console.log("Bokeh: BokehJS is being loaded, scheduling callback at", now());
+      return null;
+    }
+    if (js_urls == null || js_urls.length === 0) {
+      run_callbacks();
+      return null;
+    }
+    console.log("Bokeh: BokehJS not loaded, scheduling load and callback at", now());
+    window._bokeh_is_loading = js_urls.length;
+    for (var i = 0; i < js_urls.length; i++) {
+      var url = js_urls[i];
+      var s = document.createElement('script');
+      s.src = url;
+      s.async = false;
+      s.onreadystatechange = s.onload = function() {
+        window._bokeh_is_loading--;
+        if (window._bokeh_is_loading === 0) {
+          console.log("Bokeh: all BokehJS libraries loaded");
+          run_callbacks()
+        }
+      };
+      s.onerror = function() {
+        console.warn("failed to load library " + url);
+      };
+      console.log("Bokeh: injecting script tag for BokehJS library: ", url);
+      document.getElementsByTagName("head")[0].appendChild(s);
+    }
+  };
+
+  var js_urls = ["https://cdn.pydata.org/bokeh/release/bokeh-0.12.5.min.js", "https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.5.min.js"];
+
+  var inline_js = [
+    function(Bokeh) {
+      Bokeh.set_log_level("info");
+    },
+
+    function(Bokeh) {
+
+    },
+    function(Bokeh) {
+      console.log("Bokeh: injecting CSS: https://cdn.pydata.org/bokeh/release/bokeh-0.12.5.min.css");
+      Bokeh.embed.inject_css("https://cdn.pydata.org/bokeh/release/bokeh-0.12.5.min.css");
+      console.log("Bokeh: injecting CSS: https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.5.min.css");
+      Bokeh.embed.inject_css("https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.5.min.css");
+    }
+  ];
+
+  function run_inline_js() {
+
+    if ((window.Bokeh !== undefined) || (force === true)) {
+      for (var i = 0; i < inline_js.length; i++) {
+        inline_js[i](window.Bokeh);
+      }} else if (Date.now() < window._bokeh_timeout) {
+      setTimeout(run_inline_js, 100);
+    } else if (!window._bokeh_failed_load) {
+      console.log("Bokeh: BokehJS failed to load within specified timeout.");
+      window._bokeh_failed_load = true;
+    } else if (force !== true) {
+      var cell = $(document.getElementById("")).parents('.cell').data().cell;
+      cell.output_area.append_execute_result(NB_LOAD_WARNING)
+    }
+
+  }
+
+  if (window._bokeh_is_loading === 0) {
+    console.log("Bokeh: BokehJS loaded, going straight to plotting");
+    run_inline_js();
+  } else {
+    load_libs(js_urls, function() {
+      console.log("Bokeh: BokehJS plotting callback run at", now());
+      run_inline_js();
+    });
+  }
+}(this));
+</script></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [12]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="n">bar</span> <span class="o">=</span> <span class="n">Bar</span><span class="p">(</span>
+    <span class="n">fifty_k_activitis</span><span class="p">,</span>
+    <span class="s1">&#39;Publisher Name&#39;</span><span class="p">,</span>
+    <span class="n">values</span><span class="o">=</span><span class="s1">&#39;Activities&#39;</span><span class="p">,</span>
+    <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Number of activities by reporting orgs in data&quot;</span><span class="p">)</span>
+<span class="n">yaxis</span> <span class="o">=</span> <span class="n">bar</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="n">Axis</span><span class="p">,</span> <span class="n">layout</span><span class="o">=</span><span class="s2">&quot;left&quot;</span><span class="p">))[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">yaxis</span><span class="o">.</span><span class="n">formatter</span><span class="o">.</span><span class="n">use_scientific</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">show</span><span class="p">(</span><span class="n">bar</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+    <div class="bk-root">
+        <div class="bk-plotdiv" id="aa13dba6-19a7-4ba9-9241-688cb5ccf474"></div>
+    </div>
+<script type="text/javascript">
+
+  (function(global) {
+    function now() {
+      return new Date();
+    }
+
+    var force = false;
+
+    if (typeof (window._bokeh_onload_callbacks) === "undefined" || force === true) {
+      window._bokeh_onload_callbacks = [];
+      window._bokeh_is_loading = undefined;
+    }
+
+
+
+    if (typeof (window._bokeh_timeout) === "undefined" || force === true) {
+      window._bokeh_timeout = Date.now() + 0;
+      window._bokeh_failed_load = false;
+    }
+
+    var NB_LOAD_WARNING = {'data': {'text/html':
+       "<div style='background-color: #fdd'>\n"+
+       "<p>\n"+
+       "BokehJS does not appear to have successfully loaded. If loading BokehJS from CDN, this \n"+
+       "may be due to a slow or bad network connection. Possible fixes:\n"+
+       "</p>\n"+
+       "<ul>\n"+
+       "<li>re-rerun `output_notebook()` to attempt to load from CDN again, or</li>\n"+
+       "<li>use INLINE resources instead, as so:</li>\n"+
+       "</ul>\n"+
+       "<code>\n"+
+       "from bokeh.resources import INLINE\n"+
+       "output_notebook(resources=INLINE)\n"+
+       "</code>\n"+
+       "</div>"}};
+
+    function display_loaded() {
+      if (window.Bokeh !== undefined) {
+        var el = document.getElementById("aa13dba6-19a7-4ba9-9241-688cb5ccf474");
+        el.textContent = "BokehJS " + Bokeh.version + " successfully loaded.";
+      } else if (Date.now() < window._bokeh_timeout) {
+        setTimeout(display_loaded, 100)
+      }
+    }
+
+    function run_callbacks() {
+      window._bokeh_onload_callbacks.forEach(function(callback) { callback() });
+      delete window._bokeh_onload_callbacks
+      console.info("Bokeh: all callbacks have finished");
+    }
+
+    function load_libs(js_urls, callback) {
+      window._bokeh_onload_callbacks.push(callback);
+      if (window._bokeh_is_loading > 0) {
+        console.log("Bokeh: BokehJS is being loaded, scheduling callback at", now());
+        return null;
+      }
+      if (js_urls == null || js_urls.length === 0) {
+        run_callbacks();
+        return null;
+      }
+      console.log("Bokeh: BokehJS not loaded, scheduling load and callback at", now());
+      window._bokeh_is_loading = js_urls.length;
+      for (var i = 0; i < js_urls.length; i++) {
+        var url = js_urls[i];
+        var s = document.createElement('script');
+        s.src = url;
+        s.async = false;
+        s.onreadystatechange = s.onload = function() {
+          window._bokeh_is_loading--;
+          if (window._bokeh_is_loading === 0) {
+            console.log("Bokeh: all BokehJS libraries loaded");
+            run_callbacks()
+          }
+        };
+        s.onerror = function() {
+          console.warn("failed to load library " + url);
+        };
+        console.log("Bokeh: injecting script tag for BokehJS library: ", url);
+        document.getElementsByTagName("head")[0].appendChild(s);
+      }
+    };var element = document.getElementById("aa13dba6-19a7-4ba9-9241-688cb5ccf474");
+    if (element == null) {
+      console.log("Bokeh: ERROR: autoload.js configured with elementid 'aa13dba6-19a7-4ba9-9241-688cb5ccf474' but no matching script tag was found. ")
+      return false;
+    }
+
+    var js_urls = [];
+
+    var inline_js = [
+      function(Bokeh) {
+        (function() {
+          var fn = function() {
+            var docs_json = {"4023cddc-534e-479e-b4d0-8a985d4c5a56":{"roots":{"references":[{"attributes":{"use_scientific":false},"id":"cc11cdaa-cf6b-446f-95b4-708da8e757c8","type":"BasicTickFormatter"},{"attributes":{"fill_alpha":{"field":"fill_alpha"},"fill_color":{"field":"color"},"height":{"field":"height","units":"data"},"line_color":{"field":"line_color"},"width":{"field":"width","units":"data"},"x":{"field":"x"},"y":{"field":"y"}},"id":"e90ca958-065e-4913-9a95-875171ac9118","type":"Rect"},{"attributes":{"data_source":{"id":"b4e5b214-e9b4-4b89-969e-3dde0ef6f5bf","type":"ColumnDataSource"},"glyph":{"id":"b84a8c82-5b1c-42da-ab4f-c164f7b55b43","type":"Rect"},"hover_glyph":null,"muted_glyph":null},"id":"3b72844e-e8ff-4010-9384-d20611a6261f","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"field":"fill_alpha"},"fill_color":{"field":"color"},"height":{"field":"height","units":"data"},"line_color":{"field":"line_color"},"width":{"field":"width","units":"data"},"x":{"field":"x"},"y":{"field":"y"}},"id":"609219a2-cf82-479d-a52d-41d01b6ecb94","type":"Rect"},{"attributes":{"data_source":{"id":"83af6942-50d5-417c-9957-7867d20c4f8e","type":"ColumnDataSource"},"glyph":{"id":"e90ca958-065e-4913-9a95-875171ac9118","type":"Rect"},"hover_glyph":null,"muted_glyph":null},"id":"5ef3844b-4317-48e2-9b89-7b5bfbb60495","type":"GlyphRenderer"},{"attributes":{"items":[{"id":"5171b206-4c5d-498d-a518-af6705924d60","type":"LegendItem"},{"id":"67a73814-8c2b-439f-87a3-a64b13203af5","type":"LegendItem"},{"id":"4ebfaf79-28cc-4a50-95ab-8d907244ca53","type":"LegendItem"},{"id":"b4370d85-e8e9-4bce-9e31-fb9618f224ed","type":"LegendItem"}],"location":"top_left","plot":{"id":"43f17873-1ba8-47fe-af66-1db57676cd41","subtype":"Chart","type":"Plot"}},"id":"f4c1b5e0-8c37-49b6-b3e8-b77f65beafa0","type":"Legend"},{"attributes":{"callback":null,"end":137466.0},"id":"6f42ed8a-9bf9-4b25-acff-29eddc05d008","type":"Range1d"},{"attributes":{},"id":"830512c2-86c2-4399-aa63-dbe882cfb024","type":"ToolEvents"},{"attributes":{"callback":null,"column_names":["x","y","width","height","color","fill_alpha","line_color","line_alpha","label"],"data":{"Publisher Name":["United States"],"chart_index":[{"Publisher Name":"United States"}],"color":["#f22c40"],"fill_alpha":[0.8],"height":[130920.0],"label":[{"Publisher Name":"United States"}],"line_alpha":[1.0],"line_color":["white"],"width":[0.8],"x":["United States"],"y":[65460.0]}},"id":"83af6942-50d5-417c-9957-7867d20c4f8e","type":"ColumnDataSource"},{"attributes":{"label":{"value":"Sweden, through Swedish International Development Cooperation Agency (Sida)"},"renderers":[{"id":"3b72844e-e8ff-4010-9384-d20611a6261f","type":"GlyphRenderer"}]},"id":"67a73814-8c2b-439f-87a3-a64b13203af5","type":"LegendItem"},{"attributes":{"fill_alpha":{"field":"fill_alpha"},"fill_color":{"field":"color"},"height":{"field":"height","units":"data"},"line_color":{"field":"line_color"},"width":{"field":"width","units":"data"},"x":{"field":"x"},"y":{"field":"y"}},"id":"b84a8c82-5b1c-42da-ab4f-c164f7b55b43","type":"Rect"},{"attributes":{"dimension":1,"plot":{"id":"43f17873-1ba8-47fe-af66-1db57676cd41","subtype":"Chart","type":"Plot"},"ticker":{"id":"f1bfbe4d-eb0f-47e4-b7d9-719eacd93994","type":"BasicTicker"}},"id":"326afe2e-5cfd-4dea-8caf-592ce2755185","type":"Grid"},{"attributes":{},"id":"6bbe0083-976a-401c-8425-788a0040c731","type":"CategoricalTickFormatter"},{"attributes":{"plot":{"id":"43f17873-1ba8-47fe-af66-1db57676cd41","subtype":"Chart","type":"Plot"}},"id":"306928da-f555-4570-a5bc-49a04a44349c","type":"WheelZoomTool"},{"attributes":{"overlay":{"id":"7557dd70-4b19-48df-8ecf-5c74c5ee5211","type":"BoxAnnotation"},"plot":{"id":"43f17873-1ba8-47fe-af66-1db57676cd41","subtype":"Chart","type":"Plot"}},"id":"d6326955-6f6e-4c5d-8b34-5d16cdda5f68","type":"BoxZoomTool"},{"attributes":{"plot":{"id":"43f17873-1ba8-47fe-af66-1db57676cd41","subtype":"Chart","type":"Plot"}},"id":"96fac051-b015-4871-808f-f7d65f0bd948","type":"HelpTool"},{"attributes":{"plot":{"id":"43f17873-1ba8-47fe-af66-1db57676cd41","subtype":"Chart","type":"Plot"}},"id":"6d0699f2-7686-48e4-9c5f-dcf50d6a1a6b","type":"SaveTool"},{"attributes":{},"id":"836cc7b2-3e85-4257-8dec-e2243f55a79f","type":"CategoricalTicker"},{"attributes":{"label":{"value":"United States Agency for International Development (USAID)"},"renderers":[{"id":"5f594c1b-88e5-4a39-9f84-d9f9d03a23aa","type":"GlyphRenderer"}]},"id":"b4370d85-e8e9-4bce-9e31-fb9618f224ed","type":"LegendItem"},{"attributes":{"below":[{"id":"bbf3b5bb-e809-4218-83b7-e1bd02becae9","type":"CategoricalAxis"}],"css_classes":null,"left":[{"id":"e8d3d8dd-879b-4b19-8293-36574ecf2c98","type":"LinearAxis"}],"renderers":[{"id":"7557dd70-4b19-48df-8ecf-5c74c5ee5211","type":"BoxAnnotation"},{"id":"31791267-a799-4f1e-83d3-f6e58083df4d","type":"GlyphRenderer"},{"id":"3b72844e-e8ff-4010-9384-d20611a6261f","type":"GlyphRenderer"},{"id":"5ef3844b-4317-48e2-9b89-7b5bfbb60495","type":"GlyphRenderer"},{"id":"5f594c1b-88e5-4a39-9f84-d9f9d03a23aa","type":"GlyphRenderer"},{"id":"f4c1b5e0-8c37-49b6-b3e8-b77f65beafa0","type":"Legend"},{"id":"bbf3b5bb-e809-4218-83b7-e1bd02becae9","type":"CategoricalAxis"},{"id":"e8d3d8dd-879b-4b19-8293-36574ecf2c98","type":"LinearAxis"},{"id":"326afe2e-5cfd-4dea-8caf-592ce2755185","type":"Grid"}],"title":{"id":"90d2b9f1-21ff-4af4-adaa-e10363d2de66","type":"Title"},"tool_events":{"id":"830512c2-86c2-4399-aa63-dbe882cfb024","type":"ToolEvents"},"toolbar":{"id":"63f52c5b-0202-449f-9357-f9e3acac3ff8","type":"Toolbar"},"x_mapper_type":"auto","x_range":{"id":"82bf5ce2-2208-42a7-9643-9534629bb5b3","type":"FactorRange"},"y_mapper_type":"auto","y_range":{"id":"6f42ed8a-9bf9-4b25-acff-29eddc05d008","type":"Range1d"}},"id":"43f17873-1ba8-47fe-af66-1db57676cd41","subtype":"Chart","type":"Plot"},{"attributes":{"callback":null,"column_names":["x","y","width","height","color","fill_alpha","line_color","line_alpha","label"],"data":{"Publisher Name":["Sweden, through Swedish International Development Cooperation Agency (Sida)"],"chart_index":[{"Publisher Name":"Sweden, through Swedish International Development Cooperation Agency (Sida)"}],"color":["#f22c40"],"fill_alpha":[0.8],"height":[79245.0],"label":[{"Publisher Name":"Sweden, through Swedish International Development Cooperation Agency (Sida)"}],"line_alpha":[1.0],"line_color":["white"],"width":[0.8],"x":["Sweden, through Swedish International Development Cooperation Agency (Sida)"],"y":[39622.5]}},"id":"b4e5b214-e9b4-4b89-969e-3dde0ef6f5bf","type":"ColumnDataSource"},{"attributes":{"active_drag":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"4ac1cf6e-919e-4bc8-b6c1-60cecc1e3ea4","type":"PanTool"},{"id":"306928da-f555-4570-a5bc-49a04a44349c","type":"WheelZoomTool"},{"id":"d6326955-6f6e-4c5d-8b34-5d16cdda5f68","type":"BoxZoomTool"},{"id":"6d0699f2-7686-48e4-9c5f-dcf50d6a1a6b","type":"SaveTool"},{"id":"94a36d4b-9b5b-44ac-b465-57e154158cfc","type":"ResetTool"},{"id":"96fac051-b015-4871-808f-f7d65f0bd948","type":"HelpTool"}]},"id":"63f52c5b-0202-449f-9357-f9e3acac3ff8","type":"Toolbar"},{"attributes":{"plot":{"id":"43f17873-1ba8-47fe-af66-1db57676cd41","subtype":"Chart","type":"Plot"}},"id":"4ac1cf6e-919e-4bc8-b6c1-60cecc1e3ea4","type":"PanTool"},{"attributes":{"axis_label":"Publisher Name","formatter":{"id":"6bbe0083-976a-401c-8425-788a0040c731","type":"CategoricalTickFormatter"},"major_label_orientation":0.7853981633974483,"plot":{"id":"43f17873-1ba8-47fe-af66-1db57676cd41","subtype":"Chart","type":"Plot"},"ticker":{"id":"836cc7b2-3e85-4257-8dec-e2243f55a79f","type":"CategoricalTicker"}},"id":"bbf3b5bb-e809-4218-83b7-e1bd02becae9","type":"CategoricalAxis"},{"attributes":{"callback":null,"column_names":["x","y","width","height","color","fill_alpha","line_color","line_alpha","label"],"data":{"Publisher Name":["United States Agency for International Development (USAID)"],"chart_index":[{"Publisher Name":"United States Agency for International Development (USAID)"}],"color":["#f22c40"],"fill_alpha":[0.8],"height":[72022.0],"label":[{"Publisher Name":"United States Agency for International Development (USAID)"}],"line_alpha":[1.0],"line_color":["white"],"width":[0.8],"x":["United States Agency for International Development (USAID)"],"y":[36011.0]}},"id":"55dbf365-8d46-4f2b-aed3-2648ab33b1f4","type":"ColumnDataSource"},{"attributes":{},"id":"f1bfbe4d-eb0f-47e4-b7d9-719eacd93994","type":"BasicTicker"},{"attributes":{"callback":null,"factors":["European Commission - Development and Cooperation-EuropeAid","Sweden, through Swedish International Development Cooperation Agency (Sida)","United States","United States Agency for International Development (USAID)"]},"id":"82bf5ce2-2208-42a7-9643-9534629bb5b3","type":"FactorRange"},{"attributes":{"fill_alpha":{"field":"fill_alpha"},"fill_color":{"field":"color"},"height":{"field":"height","units":"data"},"line_color":{"field":"line_color"},"width":{"field":"width","units":"data"},"x":{"field":"x"},"y":{"field":"y"}},"id":"f8297db1-3539-4d45-a4f7-a6463ba5aeb3","type":"Rect"},{"attributes":{"plot":{"id":"43f17873-1ba8-47fe-af66-1db57676cd41","subtype":"Chart","type":"Plot"}},"id":"94a36d4b-9b5b-44ac-b465-57e154158cfc","type":"ResetTool"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"plot":null,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"7557dd70-4b19-48df-8ecf-5c74c5ee5211","type":"BoxAnnotation"},{"attributes":{"data_source":{"id":"a95d8b49-8a3a-4384-842f-59ee90f9eb15","type":"ColumnDataSource"},"glyph":{"id":"609219a2-cf82-479d-a52d-41d01b6ecb94","type":"Rect"},"hover_glyph":null,"muted_glyph":null},"id":"31791267-a799-4f1e-83d3-f6e58083df4d","type":"GlyphRenderer"},{"attributes":{"label":{"value":"United States"},"renderers":[{"id":"5ef3844b-4317-48e2-9b89-7b5bfbb60495","type":"GlyphRenderer"}]},"id":"4ebfaf79-28cc-4a50-95ab-8d907244ca53","type":"LegendItem"},{"attributes":{"axis_label":"Sum( Activities )","formatter":{"id":"cc11cdaa-cf6b-446f-95b4-708da8e757c8","type":"BasicTickFormatter"},"plot":{"id":"43f17873-1ba8-47fe-af66-1db57676cd41","subtype":"Chart","type":"Plot"},"ticker":{"id":"f1bfbe4d-eb0f-47e4-b7d9-719eacd93994","type":"BasicTicker"}},"id":"e8d3d8dd-879b-4b19-8293-36574ecf2c98","type":"LinearAxis"},{"attributes":{"plot":null,"text":"Number of activities by reporting orgs in data"},"id":"90d2b9f1-21ff-4af4-adaa-e10363d2de66","type":"Title"},{"attributes":{"data_source":{"id":"55dbf365-8d46-4f2b-aed3-2648ab33b1f4","type":"ColumnDataSource"},"glyph":{"id":"f8297db1-3539-4d45-a4f7-a6463ba5aeb3","type":"Rect"},"hover_glyph":null,"muted_glyph":null},"id":"5f594c1b-88e5-4a39-9f84-d9f9d03a23aa","type":"GlyphRenderer"},{"attributes":{"callback":null,"column_names":["x","y","width","height","color","fill_alpha","line_color","line_alpha","label"],"data":{"Publisher Name":["European Commission - Development and Cooperation-EuropeAid"],"chart_index":[{"Publisher Name":"European Commission - Development and Cooperation-EuropeAid"}],"color":["#f22c40"],"fill_alpha":[0.8],"height":[50007.0],"label":[{"Publisher Name":"European Commission - Development and Cooperation-EuropeAid"}],"line_alpha":[1.0],"line_color":["white"],"width":[0.8],"x":["European Commission - Development and Cooperation-EuropeAid"],"y":[25003.5]}},"id":"a95d8b49-8a3a-4384-842f-59ee90f9eb15","type":"ColumnDataSource"},{"attributes":{"label":{"value":"European Commission - Development and Cooperation-EuropeAid"},"renderers":[{"id":"31791267-a799-4f1e-83d3-f6e58083df4d","type":"GlyphRenderer"}]},"id":"5171b206-4c5d-498d-a518-af6705924d60","type":"LegendItem"}],"root_ids":["43f17873-1ba8-47fe-af66-1db57676cd41"]},"title":"Bokeh Application","version":"0.12.5"}};
+            var render_items = [{"docid":"4023cddc-534e-479e-b4d0-8a985d4c5a56","elementid":"aa13dba6-19a7-4ba9-9241-688cb5ccf474","modelid":"43f17873-1ba8-47fe-af66-1db57676cd41"}];
+
+            Bokeh.embed.embed_items(docs_json, render_items);
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+      },
+      function(Bokeh) {
+      }
+    ];
+
+    function run_inline_js() {
+
+      if ((window.Bokeh !== undefined) || (force === true)) {
+        for (var i = 0; i < inline_js.length; i++) {
+          inline_js[i](window.Bokeh);
+        }if (force === true) {
+          display_loaded();
+        }} else if (Date.now() < window._bokeh_timeout) {
+        setTimeout(run_inline_js, 100);
+      } else if (!window._bokeh_failed_load) {
+        console.log("Bokeh: BokehJS failed to load within specified timeout.");
+        window._bokeh_failed_load = true;
+      } else if (force !== true) {
+        var cell = $(document.getElementById("aa13dba6-19a7-4ba9-9241-688cb5ccf474")).parents('.cell').data().cell;
+        cell.output_area.append_execute_result(NB_LOAD_WARNING)
+      }
+
+    }
+
+    if (window._bokeh_is_loading === 0) {
+      console.log("Bokeh: BokehJS loaded, going straight to plotting");
+      run_inline_js();
+    } else {
+      load_libs(js_urls, function() {
+        console.log("Bokeh: BokehJS plotting callback run at", now());
+        run_inline_js();
+      });
+    }
+  }(this));
+</script></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [13]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="n">hover</span> <span class="o">=</span> <span class="n">HoverTool</span><span class="p">(</span><span class="n">tooltips</span><span class="o">=</span><span class="p">[</span>
+    <span class="p">(</span><span class="s2">&quot;Publisher&quot;</span><span class="p">,</span> <span class="s2">&quot;@{Publisher Name}&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;Number of Activities&quot;</span><span class="p">,</span> <span class="s2">&quot;@</span><span class="si">{Activities}</span><span class="s2">&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;Total File Size&quot;</span><span class="p">,</span> <span class="s2">&quot;@{Total File Size}&quot;</span><span class="p">)])</span>
+
+<span class="n">p</span> <span class="o">=</span> <span class="n">figure</span><span class="p">(</span>
+    <span class="n">plot_height</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span>
+    <span class="n">plot_width</span><span class="o">=</span><span class="mi">700</span><span class="p">,</span>
+    <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Publishers Activities vs File Size&quot;</span><span class="p">,</span>
+    <span class="n">tools</span><span class="o">=</span><span class="p">[</span><span class="n">hover</span><span class="p">],</span>
+    <span class="n">y_axis_type</span><span class="o">=</span><span class="s2">&quot;log&quot;</span><span class="p">,</span>
+    <span class="n">x_axis_type</span><span class="o">=</span><span class="s2">&quot;log&quot;</span><span class="p">)</span>
+<span class="n">p</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Activities&#39;</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Total File Size&#39;</span><span class="p">,</span>
+    <span class="n">size</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span>
+    <span class="n">source</span><span class="o">=</span><span class="n">publishers</span><span class="p">,</span>
+    <span class="n">fill_color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span>
+    <span class="n">fill_alpha</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span>
+    <span class="n">line_color</span><span class="o">=</span><span class="s1">&#39;#7c7e71&#39;</span><span class="p">,</span>
+    <span class="n">line_width</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
+    <span class="n">line_alpha</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="c1"># yaxis = p.select(dict(type=Axis, layout=&quot;left&quot;))[0]</span>
+<span class="c1"># yaxis.formatter.use_scientific = False</span>
+
+<span class="n">show</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+    <div class="bk-root">
+        <div class="bk-plotdiv" id="904ede4f-9e94-4c21-b476-ae77ba7a2d3e"></div>
+    </div>
+<script type="text/javascript">
+
+  (function(global) {
+    function now() {
+      return new Date();
+    }
+
+    var force = false;
+
+    if (typeof (window._bokeh_onload_callbacks) === "undefined" || force === true) {
+      window._bokeh_onload_callbacks = [];
+      window._bokeh_is_loading = undefined;
+    }
+
+
+
+    if (typeof (window._bokeh_timeout) === "undefined" || force === true) {
+      window._bokeh_timeout = Date.now() + 0;
+      window._bokeh_failed_load = false;
+    }
+
+    var NB_LOAD_WARNING = {'data': {'text/html':
+       "<div style='background-color: #fdd'>\n"+
+       "<p>\n"+
+       "BokehJS does not appear to have successfully loaded. If loading BokehJS from CDN, this \n"+
+       "may be due to a slow or bad network connection. Possible fixes:\n"+
+       "</p>\n"+
+       "<ul>\n"+
+       "<li>re-rerun `output_notebook()` to attempt to load from CDN again, or</li>\n"+
+       "<li>use INLINE resources instead, as so:</li>\n"+
+       "</ul>\n"+
+       "<code>\n"+
+       "from bokeh.resources import INLINE\n"+
+       "output_notebook(resources=INLINE)\n"+
+       "</code>\n"+
+       "</div>"}};
+
+    function display_loaded() {
+      if (window.Bokeh !== undefined) {
+        var el = document.getElementById("904ede4f-9e94-4c21-b476-ae77ba7a2d3e");
+        el.textContent = "BokehJS " + Bokeh.version + " successfully loaded.";
+      } else if (Date.now() < window._bokeh_timeout) {
+        setTimeout(display_loaded, 100)
+      }
+    }
+
+    function run_callbacks() {
+      window._bokeh_onload_callbacks.forEach(function(callback) { callback() });
+      delete window._bokeh_onload_callbacks
+      console.info("Bokeh: all callbacks have finished");
+    }
+
+    function load_libs(js_urls, callback) {
+      window._bokeh_onload_callbacks.push(callback);
+      if (window._bokeh_is_loading > 0) {
+        console.log("Bokeh: BokehJS is being loaded, scheduling callback at", now());
+        return null;
+      }
+      if (js_urls == null || js_urls.length === 0) {
+        run_callbacks();
+        return null;
+      }
+      console.log("Bokeh: BokehJS not loaded, scheduling load and callback at", now());
+      window._bokeh_is_loading = js_urls.length;
+      for (var i = 0; i < js_urls.length; i++) {
+        var url = js_urls[i];
+        var s = document.createElement('script');
+        s.src = url;
+        s.async = false;
+        s.onreadystatechange = s.onload = function() {
+          window._bokeh_is_loading--;
+          if (window._bokeh_is_loading === 0) {
+            console.log("Bokeh: all BokehJS libraries loaded");
+            run_callbacks()
+          }
+        };
+        s.onerror = function() {
+          console.warn("failed to load library " + url);
+        };
+        console.log("Bokeh: injecting script tag for BokehJS library: ", url);
+        document.getElementsByTagName("head")[0].appendChild(s);
+      }
+    };var element = document.getElementById("904ede4f-9e94-4c21-b476-ae77ba7a2d3e");
+    if (element == null) {
+      console.log("Bokeh: ERROR: autoload.js configured with elementid '904ede4f-9e94-4c21-b476-ae77ba7a2d3e' but no matching script tag was found. ")
+      return false;
+    }
+
+    var js_urls = [];
+
+    var inline_js = [
+      function(Bokeh) {
+        (function() {
+          var fn = function() {
+            var docs_json = {"54b6ca23-c527-4fa1-9367-0bb226fc0cda":{"roots":{"references":[{"attributes":{"callback":null},"id":"eecc23aa-d55b-46bb-b806-5dfd67385205","type":"DataRange1d"},{"attributes":{"num_minor_ticks":10},"id":"510d0336-4782-4f35-904b-094b1703a49a","type":"LogTicker"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":0.5},"size":{"units":"screen","value":15},"x":{"field":"Activities"},"y":{"field":"Total File Size"}},"id":"0f554427-6152-4ba8-9861-6cb385319a19","type":"Circle"},{"attributes":{"callback":null},"id":"810f1554-8167-46eb-aaf2-d62cd5c1be19","type":"DataRange1d"},{"attributes":{"active_drag":"auto","active_scroll":"auto","active_tap":"auto","tools":[{"id":"9ce78559-c1bf-40e4-9f41-12c00be414b2","type":"HoverTool"}]},"id":"d1eac58b-487c-4387-b8de-2ac31f3cb3b4","type":"Toolbar"},{"attributes":{"plot":null,"text":"Publishers Activities vs File Size"},"id":"694298dc-54fa-4d4c-9a12-5b713612bfac","type":"Title"},{"attributes":{"data_source":{"id":"413e158d-2e1b-46bb-a73c-e53ab869181e","type":"ColumnDataSource"},"glyph":{"id":"f5362a3b-41d5-4688-b181-f66f1b7f67cc","type":"Circle"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"0f554427-6152-4ba8-9861-6cb385319a19","type":"Circle"},"selection_glyph":null},"id":"d45db290-81da-41de-9728-06c45ec14061","type":"GlyphRenderer"},{"attributes":{"below":[{"id":"991dd8fb-d2f8-45b1-8b9a-4d693d9944c2","type":"LogAxis"}],"left":[{"id":"65611cb1-d825-4e18-a129-6a9ebe5e8463","type":"LogAxis"}],"plot_width":700,"renderers":[{"id":"991dd8fb-d2f8-45b1-8b9a-4d693d9944c2","type":"LogAxis"},{"id":"a2327bfa-ae49-4bbb-a0e7-289523b01785","type":"Grid"},{"id":"65611cb1-d825-4e18-a129-6a9ebe5e8463","type":"LogAxis"},{"id":"828799d6-83a2-426b-9e72-611edc2807f8","type":"Grid"},{"id":"d45db290-81da-41de-9728-06c45ec14061","type":"GlyphRenderer"}],"title":{"id":"694298dc-54fa-4d4c-9a12-5b713612bfac","type":"Title"},"tool_events":{"id":"57d4826a-87a5-4046-814f-e8699a15400a","type":"ToolEvents"},"toolbar":{"id":"d1eac58b-487c-4387-b8de-2ac31f3cb3b4","type":"Toolbar"},"x_mapper_type":"log","x_range":{"id":"eecc23aa-d55b-46bb-b806-5dfd67385205","type":"DataRange1d"},"y_mapper_type":"log","y_range":{"id":"810f1554-8167-46eb-aaf2-d62cd5c1be19","type":"DataRange1d"}},"id":"992d5a9f-e431-43d9-a62f-bbac9e7b84df","subtype":"Figure","type":"Plot"},{"attributes":{"callback":null,"column_names":["Publisher Registry Id","Activities","Organisations","Files","Activity Files","Organisation Files","Total File Size","Reporting Org on Registry","Reporting Orgs in Data (count)","Reporting Orgs in Data","Hierarchies (count)","Hierarchies","Publisher Name"],"data":{"Activities":[2,96,4,2,2193,1,1,5,1,34,5,4,2,1,2,13,1,2,4,23,23,1,3,30,1620,4167,2,6,2,0,3,5,1,6,868,1,293,24319,3,5,45,1,0,2,2,0,2,3,2,2,3,48,1,0,2,1,3,3,4,371,3,1,5,1362,16,18,3,0,3,2,11470,10,33,16,6,1,1,1,4304,1,3,1,6749,468,5781,7,12,11,5,924,1,1,11,1006,33,7,4,12,1,1,25,15,4,1,0,3,0,4,109,1,1,1,1,6609,13,1,5,15,2,207,1,1,131,18,16,13,1,14,1,40,10,1,58,16,5,3,1,51,2,1,2,1,1,5,13,27,8,13005,7,1,6,13,4,4,20,26,53,9,17485,83,1,38,2,22,1,3,1,1,11,1,389,50007,4647,1080,13981,1,6,1,392,145,2,1,9,24,8,2,6,1,22,6,1,1,3196,6,15345,2,1,2,31,14753,0,0,1,1,3,14,11466,1454,2,29,11,6,2,14,5,3894,643,2,2667,175,28,14,1,1,12,0,0,1,120,12,2,1,7,8,1,2,1,1,1,13,265,1983,1,2,10,7,20,2,1,9,0,1,1,2,16,1,11880,1137,11,5,1,259,1,111,19,1,14,120,5327,1,4,1052,3358,60,1,1902,2,20,11,230,5,43,36,3,79,1,5,1,16,20,7,1,36,3143,10,6,4,6,152,6,4,54,1,45505,2,1,5,1,9,4,1,1,1,2,1,1,13,1,1,32,1,1,451,1,11,2,37906,8,0,7,225,92,1,1,3,2,1,2,20,8,1,1526,1,1,2,1,1,6885,1,6,0,5,6,3,187,1,1,2,9,1,16,1,1,1,1,1,50,110,12,400,3926,2,154,0,3,2,24461,2019,1,1385,123,1,1,0,7,2077,40,5,6,1,2763,1,1,5239,46,29,9,44,1,1,1,1,0,3,1,11,8,1,119,19,25,85,3,1,15,1,1,2,6,10,343,1,1,1,3,14,131,5,2,4,11,0,2,1,2,1,1,38,1582,1,1,1,69,1,41,3,42,0,1,1032,14305,129,9,3,0,2,1,79245,1,0,2,2,1,1,2,29,0,23,102,8,1,1,5,1,1,420,3,594,29,1,1,25,4,1,2,0,200,1,1,2,2,3,13,1,136,27,1,1,0,1095,3,6,4,2,4,1,1,5,58,25,272,5,20,3,75,50,45,572,1,34,2,489,7,152,14616,2710,6202,495,11469,1,130920,1,395,1036,2249,576,8,72022,65,54,1,3,1,1,10,52,280,26,1,5,9,168,4,1,2,380,1,1,2,1,1,1,1,3,5,0,1,842,3,1,6541,44,6,20,26,2665,1,1,1,1,1,1,237,15,67,379,2,5,11,1,4,0,1,1,3,13,64],"Activity Files":[1,1,1,1,19,1,1,1,1,15,1,4,2,1,2,9,1,2,1,1,1,1,1,1,67,56,1,1,1,0,1,1,1,1,7,1,1,12,1,4,1,1,0,1,2,0,1,2,1,1,1,1,1,0,1,1,1,2,2,5,1,1,3,40,9,1,1,0,1,1,155,1,1,1,5,1,1,1,6,1,1,1,10,1,1,1,5,1,3,1,1,1,7,63,2,1,4,5,1,1,1,1,1,1,0,1,0,2,1,1,1,1,1,2,1,1,4,3,1,48,1,1,3,1,8,1,1,11,1,1,9,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,7,7,2,1,4,13,2,1,1,1,2,5,119,8,1,1,1,1,1,1,1,1,1,1,1,219,6,88,51,1,1,1,1,1,1,1,1,4,1,1,1,1,1,1,1,1,1,1,20,1,1,1,1,149,1,0,1,1,2,1,2,46,1,5,7,2,1,11,4,2,1,1,77,1,1,1,1,1,1,0,0,1,1,1,1,1,1,7,1,1,1,1,1,1,1,1,1,1,5,1,14,1,1,1,0,1,1,2,1,1,116,27,4,1,1,1,1,3,1,1,1,1,2,1,2,1,121,2,1,1,2,6,5,1,1,1,1,2,2,1,1,1,5,1,1,1,1,6,1,5,4,1,2,1,4,1,1,41,1,1,1,1,1,4,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,143,1,0,3,77,1,1,1,3,2,1,2,1,5,1,3,1,1,1,1,1,6,1,2,0,1,6,1,1,1,1,1,4,1,1,1,1,1,1,1,1,1,8,1,1,2,9,0,3,1,104,5,1,1,1,1,1,0,1,23,2,1,6,1,72,1,1,18,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,18,1,1,3,1,8,1,1,1,1,1,5,1,1,1,1,8,3,1,2,4,9,0,1,1,1,1,1,1,22,1,1,1,1,1,1,3,20,0,1,4,5,1,6,3,0,1,1,164,1,0,1,2,1,1,1,4,0,1,1,1,1,1,2,1,1,5,1,1,1,1,1,1,1,1,1,0,12,1,1,1,1,1,1,1,1,2,1,1,0,140,1,6,3,1,1,1,1,4,58,1,3,1,1,1,1,1,1,2,1,2,1,98,1,1,153,1,218,1,136,1,269,1,3,157,1,2,1,173,24,1,1,2,1,1,1,2,1,9,1,1,1,2,2,1,1,25,1,1,1,1,1,1,1,1,1,0,1,7,1,1,177,2,1,1,1,136,1,1,1,1,1,1,1,1,32,12,1,1,1,1,1,0,1,1,1,1,1],"Files":[1,1,2,1,19,2,2,1,2,16,2,5,3,2,3,10,1,2,2,2,1,2,2,1,68,57,1,1,1,0,2,2,1,2,7,2,2,12,2,5,2,1,1,1,3,0,2,3,2,2,2,2,2,1,1,2,2,3,3,5,2,1,4,41,10,2,2,0,2,1,156,2,2,2,6,2,2,2,6,2,1,2,11,1,2,2,6,1,4,2,2,2,8,63,3,2,5,5,1,1,2,2,1,2,1,2,0,2,2,2,2,2,2,2,2,2,5,4,2,48,2,2,4,1,8,1,1,12,2,2,10,2,2,1,1,2,2,2,2,2,3,2,2,2,2,2,8,8,2,2,5,14,2,2,2,2,2,5,120,8,2,2,1,1,1,2,2,2,2,1,2,220,7,89,52,2,1,2,2,2,1,2,2,5,1,2,2,2,2,2,1,2,2,2,20,1,1,2,2,150,2,0,2,2,3,2,2,47,2,6,8,3,2,12,5,3,2,1,78,1,1,1,1,2,2,0,1,2,1,2,2,2,2,8,2,2,2,2,1,2,2,2,2,2,6,1,15,1,2,2,1,2,2,3,2,2,116,28,4,2,2,2,1,3,2,2,2,2,3,2,3,2,121,3,1,1,3,6,5,2,2,2,1,3,2,2,2,2,6,2,1,1,2,7,2,6,5,2,4,2,4,1,1,42,1,2,2,2,2,4,2,2,1,2,2,1,1,1,2,2,2,1,1,2,1,3,144,2,0,4,78,2,2,1,3,3,2,3,2,5,2,3,2,2,2,1,2,7,2,3,1,1,7,2,1,1,2,2,5,2,1,1,2,2,1,2,2,2,9,1,2,3,10,1,4,2,104,6,1,1,2,2,2,1,2,24,2,2,7,2,73,2,2,18,2,2,2,2,2,2,2,1,1,2,2,2,2,2,2,18,1,2,4,1,9,2,2,2,1,2,6,2,2,1,2,9,3,2,3,4,10,1,2,2,2,2,1,2,22,1,1,2,2,1,2,4,20,0,2,5,6,2,7,4,1,1,2,166,2,1,2,3,2,1,2,5,1,2,2,2,2,1,2,1,1,5,2,2,2,1,2,2,2,2,1,1,13,2,1,2,1,2,2,1,1,3,2,2,1,141,2,7,4,1,1,1,1,5,59,2,3,2,2,2,2,2,2,2,1,3,2,99,2,1,154,2,219,1,137,2,281,1,3,158,1,2,2,173,25,2,2,3,2,2,2,3,2,10,1,2,2,2,3,1,1,26,2,2,2,2,1,2,2,2,2,1,1,8,1,1,178,2,1,1,2,137,2,2,1,2,1,2,1,2,32,13,2,2,2,1,2,1,2,2,2,1,2],"Hierarchies":["1","null","1","null","1;null","1","1","1","1","1","1","1","1;null","1","1","0;null","1","null","0;1;null","1","1","1","1;null","null","1;2","1","1","2","1","NaN","0;1","1","5","null","null","1","1;2","null","1","1","1;null","1","NaN","null","1","NaN","1","1","1","1","1","1","1","NaN","null","1","1","1","1","1;3;null","1","1","1","1","1","1","1;3","NaN","1","1","1","1","1","1","1","1","1","1","1;2","1","1","1","null","null","1","1","2","0;1","2","null","1","1","1","1","1;2;null","null","1","0;null","1","1","1;2","1","null","1","NaN","1","NaN","1","null","1","1","1","1","1","1","1","1","null","null","null","1","1","1;null","1","1","1;2","1","1","1","1","1","1","1","1","1","1;2","1","1","1","1","1","1","1","0;1","1","1","1","1;2","1","1","1","1;2","1","1","1","1","null","1","1;2","null","1","null","1","1","1","1","1","1","1","1","null","1;2","1;2","1;2","1;2","null","null","1","null","1","1","1","1","1","1","1","1","1","1","1","1","1","null","1","null","1","1","1","1","1;null","NaN","NaN","1","1","1","1","null","null","1","1","1","1","1","1","1","1","null","null","1","null","1;2;null","null","1","1","1","NaN","NaN","1","null","1;2","1","1","1","1","1","1","1","1","1","1","null","null","1","1","1;null","1","1","1","1","0;null","NaN","1","2","1","1","1","null","null","1","1","1","1;2","null","null","1","1","1","1","null","1","1","null","null","1","1","1","1","1;null","1","null","1","1","null","1","1;null","null","1","1","1","1","null","1","1","0;1;2","0","1","2","null","1","1","1","1","1","null","1","1","1;2","1","1","null","1","1","1","1","1","1","1","1","1","1","1","1","null","1","null","1","null","1;2","NaN","2","1;2","1","1","null","1;2","1","1","1","1","1","null","1;2","1","1","1","1","1","1","1","1;null","NaN","1","1","1","null","1","1","1","1","1","1","1","null","1","1","1","null","null","1","1;2","null","1","1;null","NaN","1","2","1","1","1","null","null","1","1","NaN","1","null","1;null","1","1","1","null","1","1","null","1","1","1","1","null","1","1","1","NaN","1","1","1","1","1","1","1","1;null","null","1","1","1","null","1","1","1","1","1","1","1","1","null","1","1","1","1;null","2","1","NaN","1","1","1","1","1","1","1;2","1","1","1","1","1","null","1","1","NaN","1","1;null","null","null","1","1","NaN","null","null","2","1","NaN","1","1","1","1","1","1","NaN","null","1","null","null","null","3","1","1","1","1","null","1","2","1","null","1","1","1","NaN","1","1","1","1","1","1","1","1","1;2","null","1","1","NaN","1","1;null","null","1","1","1","1","null","0;1","1;null","1","1;2","1","1","0;null","1","1","1","null","1","1;null","1","1","1","null","1;2","null","1","null","1","1","1;2;3;null","1","null","1","1;2","1","1","1","1","1;null","1","1","1","1","1;2;null","null","null","1","1","2","1;2","1;null","null","null","1","1;3;4","1","1","1","1","1","1","1","1","1","NaN","1","null","1","1","null","null","1","1","0;null","1","1","1","1","1","1","1","null","1","1;null","2;null","1","1","1","1","1","NaN","1","1","1","null","1"],"Hierarchies (count)":[1,1,1,1,2,1,1,1,1,1,1,1,2,1,1,2,1,1,3,1,1,1,2,1,2,1,1,1,1,0,2,1,1,1,1,1,2,1,1,1,2,1,0,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,3,1,1,1,1,1,1,2,0,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,3,1,1,2,1,1,2,1,1,1,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,2,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,2,1,1,1,2,1,1,1,2,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,1,1,1,1,0,0,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,2,0,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,0,1,2,1,1,1,2,1,1,1,1,1,1,2,1,1,1,1,1,1,1,2,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,2,0,1,1,1,1,1,1,1,1,1,0,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,0,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,0,1,2,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,2,1,1,1,0,1,2,1,1,1,1,1,1,2,2,1,2,1,1,2,1,1,1,1,1,2,1,1,1,1,2,1,1,1,1,1,4,1,1,1,2,1,1,1,1,2,1,1,1,1,3,1,1,1,1,1,2,2,1,1,1,3,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,2,2,1,1,1,1,1,0,1,1,1,1,1],"Organisation Files":[0,0,1,0,0,1,1,0,1,1,1,1,1,1,1,1,0,0,1,1,0,1,1,0,1,1,0,0,0,0,1,1,0,1,0,1,1,0,1,1,1,0,1,0,1,0,1,1,1,1,1,1,1,1,0,1,1,1,1,0,1,0,1,1,1,1,1,0,1,0,1,1,1,1,1,1,1,1,0,1,0,1,1,0,1,1,1,0,1,1,1,1,1,0,1,1,1,0,0,0,1,1,0,1,1,1,0,0,1,1,1,1,1,0,1,1,1,1,1,0,1,1,1,0,0,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,0,1,1,1,0,0,1,0,1,1,0,0,0,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,0,1,0,0,0,0,1,1,0,1,1,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,0,1,0,1,1,1,1,1,1,1,1,0,1,0,1,1,1,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,0,0,1,1,1,0,1,0,1,1,1,1,1,0,0,1,1,1,1,1,1,2,1,0,0,0,1,0,1,1,1,1,0,1,1,0,1,1,0,0,0,1,1,1,0,0,1,0,1,1,1,0,1,1,1,1,0,0,1,1,1,1,0,1,0,1,1,1,0,1,1,1,1,1,0,1,1,0,0,1,1,1,1,0,0,1,1,0,1,1,1,1,0,1,1,1,1,1,1,0,1,0,0,1,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,0,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,0,1,1,0,1,1,1,1,1,1,0,1,0,0,0,1,1,0,1,1,0,0,1,1,1,1,1,1,1,0,1,2,1,1,1,1,1,0,1,1,1,1,1,1,1,0,0,0,0,0,1,1,1,0,1,1,1,1,0,1,1,1,0,1,0,1,1,0,0,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,0,1,1,1,1,1,1,0,0,1,1,1,1,0,1,1,1,0,1,1,12,0,0,1,0,0,1,0,1,1,1,1,1,1,1,1,1,1,0,1,1,0,1,0,0,1,1,1,1,1,0,1,1,1,1,1,0,1,0,0,1,0,0,0,1,1,1,1,0,1,0,1,0,1,0,1,1,1,1,0,1,1,1,1,1,0,1],"Organisations":[0,0,1,0,0,1,1,0,1,1,1,1,1,1,1,1,0,0,1,1,0,1,1,0,1,1,0,0,0,0,1,1,0,1,0,1,1,0,1,1,1,0,1,0,1,0,1,1,1,1,1,1,1,1,0,1,1,1,1,0,1,0,1,1,1,1,1,0,1,0,1,1,1,1,1,1,1,1,0,1,0,1,1,0,1,1,1,0,1,1,1,1,1,0,1,1,1,0,0,0,1,1,0,1,1,1,0,0,1,1,1,1,1,0,1,1,1,1,1,0,1,1,1,0,0,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,0,1,1,1,0,0,1,0,1,1,0,0,0,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,0,1,1,1,0,1,1,1,1,1,0,1,1,1,0,0,0,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,0,1,0,0,0,0,1,1,0,1,1,0,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,0,1,0,1,1,1,1,1,1,1,1,0,1,0,1,1,1,0,0,1,1,1,1,1,1,1,1,0,1,0,0,1,0,0,1,1,1,0,1,0,1,1,1,1,1,0,0,1,1,1,1,1,1,2,1,0,0,0,1,0,1,1,1,1,0,1,1,0,1,1,0,0,0,1,1,1,0,0,1,0,1,1,1,0,1,1,1,1,0,0,1,1,1,1,0,1,0,1,1,1,0,1,1,1,1,1,0,1,1,0,0,1,1,1,1,0,0,1,1,0,1,1,1,1,0,1,1,1,1,1,1,0,5,0,0,1,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,0,0,1,1,0,1,1,1,1,0,1,1,1,1,0,1,1,0,1,1,0,1,1,1,1,1,1,0,1,0,0,0,1,1,0,1,1,0,0,1,1,1,1,1,1,1,0,1,2,1,1,1,1,1,0,1,1,8,1,1,1,1,0,0,0,0,0,1,1,1,0,1,1,1,1,0,1,1,1,0,1,0,1,1,0,0,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,0,1,1,1,1,1,1,0,0,1,1,1,1,0,1,1,1,0,1,1,12,0,0,1,0,0,1,0,1,1,1,1,1,1,1,1,1,1,0,1,1,0,1,0,0,1,1,1,1,1,0,1,1,1,1,1,0,1,0,0,1,0,0,0,1,1,1,1,0,1,0,1,0,1,0,1,1,1,1,0,1,1,1,1,1,0,1],"Publisher Name":["Acid Survivors Foundation","ActionAid International","Stichting ActionAId","Aasaman Nepal","ActionAid UK","Abaseen Foundation UK","AbleChildAfrica","Abt Associates Inc","Afghanistan and Central Asian Association","Action Against Hunger","African Centre for Global Health and Social Transformation","Agency for Cooperation and Research in Development (ACORD)","Across","act4africa","ACTED","ADD International","Ajuda de Desenvolvimento de Povo para Povo (ADPP)","Adventist Development and Relief Agency (ADRA Somalia)","ADRA-UK","Atradius Dutch State Business","AECOM","Aeras","Africa Educational Trust","Adaptation Fund","Agence Fran\u00e7aise de D\u00e9veloppement","African Development Bank","Arab foundation for freedoms and equality ","AFEW International ","Afghanaid","Stichting Aflatoun International","AfriKids","HelpAge International UK","Ag\u00eancia de Desenvolvimento do Vale do Zambeze","AgriProFocus","Agriterra","African Initiatives","AICS - Agenzia Italiana per la Cooperazione allo Sviluppo / Italian Agency for Cooperation and Development","AidData","Aga Khan Foundation (United Kingdom)","Aktis Strategy Ltd","Akvo Foundation","Alcis Holdings Limited","ONG ALCRER","Alfalit","All We Can (formerly Methodist Relief and Development Fund) ","Amnesty International The Netherlands","Amref Health Africa in Ethiopia","Amref Health Africa - UK","Amref Health Africa Headquarters","Amref Health Africa in Kenya","Amref Health Africa Malawi","Amref Flying Doctors","Amref Health Africa in Uganda","The National Association of Municipalities of Benin (ANCB)","ANDA","Association for Progressive Communication","Afghanistan Public Policy Research Organization (APPRO)","APPRO-Europe","APT Action on Poverty","Aqua for All","Association for Reproductive and Family Health ","ARK (Absolute Return for Kids)","Article19","Asian Development Bank","Avocats Sans Fronti\u00e8res","Adam Smith International","Anti-Slavery International","The Access to Nutrition Foundation","Atos IT Services Ltd","Access to Seeds Foundation","Australia - Department of  Foreign Affairs and Trade","AWEPA","Association for Women's Rights in Development (AWID)","Backward Society Education (BASE)","BasicNeeds","Bees Abroad UK","BBC Media Action","Baylor College of Medicine Children's Foundation Malawi","Belgian Development Cooperation","Bees for Development Trust","Bioclimate Research and Development","Blue Ventures Conservation","Bill & Melinda Gates Foundation","International Climate Initiative / BMUB Programmbuero IKI","Germany - Ministry for Economic Cooperation and Development","Bond","Both ENDS","BRAC International","BSR","Belgian development agency (BTC)","Build Africa","Burns Violence Survivors - Nepal","CABI","Catholic Agency For Overseas Development (CAFOD)","Christian Aid","Christian Aid Ireland","Crown Agents Limited","Camfed International","Canon Collins Trust","Cardno Emerging Markets","CARE Nederland","Caritas Denmark","Caritas Serbia","Caritas Finland","The Convention on Business Integrity","Clean Clothes Campaign","Centre For Citizens With Disabilities","CDA Collaborative Learning Projects","CDC Group plc","Conflict Dynamics International","Cecily's Fund","Christian Engineers in Development","Centre for Economic Policy Research ","United Nations Central Emergency Response Fund (CERF)","CHOICE for Youth and Sexuality","ChildFund International","ChildHope UK ","Caritas International (Belgium)","Children in Crisis","Climate Investment Funds","CIFAL Scotland ","Centre for Indian Knowledge Systems","CARE International UK","Red Cross Red Crescent Climate Centre","Stichting Nederlands Instituut voor Internationale Betrekkingen 'Clingendael'","COC Nederland","CODA International","Coffey International Development","ColaLife","The Commonwealth Secretariat","Concern Worldwide UK","Cord","Cordaid","Construction Sector Transparency Initiative (CoST)","Charity Projects Ltd (Comic Relief)","Conciliation Resources","CRANE","CREA USA","Catholic Relief Services","Child-to-Child ","United Purpose","CUAMM Trustees","Carers Worldwide","Cyan International","Dorcas Aid International","DAI Europe","dance4life","Denmark - Danida - Danish Ministry of Foreigh Affairs","Development Aid from People to People (DAPP) Malawi","Digital Campus","DanChurchAid","Defence for Children International Netherlands - ECPAT Netherlands","Disability and Development Partners","Disasters Emergency Committee","UK - Department of Energy and Climate Change","DECP","UK - Department for Environment, Food and Rural Affairs","Delivery Associates Ltd","UK - Department for International Development (DFID)","Stichting fondsbeheer DGGF lokaal MKB","Developments In Literacy Trust UK","Development Initiatives Poverty Research","Discovery Learning Alliance, Inc.","D\u00f3chas - Irish Association of Non Governmental Development Organisations","UK - Department of Health (DH)","Doctors of the World UK","Disability Rights Advocacy Fund","Disability Rights Fund","Desmond Tutu HIV Foundation","UK - Department for Work and Pensions","European Bank for Reconstruction and Development","European Commission - Development and Cooperation-EuropeAid","European Commission - Humanitarian Aid & Civil Protection","European Commission - Service for Foreign Policy Instruments","European Commission - Neighbourhood and Enlargement Negotiations","Ecorys UK","Education Development Trust","Exeter Ethiopia Link","European Investment Bank","Enhanced Integrated Framework","European Institute of Peace","Emmanuel International UK","European Journalism Centre","EMMS International","Ethical Trading Initiative","EveryChild","Engineers Without Borders Canada","Excellent Development","Farm Africa","Family Aids Caring Trust","Fairfood International","Fairtrade Labelling Organizations International e.V.","Food and Agriculture Organization of the United Nations (FAO)","Fondo Centroamericano de Mujeres","UK - Foreign & Commonwealth Office","Freedom Forum","Fauna & Flora International","Food for the Hungry UK","Canada Department of Finance / Minist\u00e8re des Finances Canada","Finland - Ministry of Foreign Affairs","Forests Monitor","FMO","Friends of the Earth-Ghana","Friends of the Earth England, Wales and Northern Ireland","Friends of the Earth International","Milieudefensie","The Foundation Center","France - Ministry for Europe and Foreign Affairs","FRANK Water","Free Press Unlimited","Free a Girl","Friends of Publish What You Fund","Feed the Minds","Fair Wear Foundation","Find Your Feet","Canada - Global Affairs Canada | Affaires mondiales Canada","The Global Alliance for Improved Nutrition","Global Action Nepal","GAVI Alliance","British Red Cross","Girls\u2019 Education Challenge \u2013 Fund Manager PwC","Global Innovation Fund","Girls Not Brides: The Global Partnership to End Child Marriage","Giro555 (Stichting Samenwerkende Hulporganisaties)","Gender Links","GlobalGiving.org","Global Network of People Living with HIV (GNP+)","GOAL","Global Partnership for Education","GPPAC Foundation","Grow Movement","Hagar International UK","Stichting Health Action International","The HALO Trust","Hand in Hand International","Hospice Africa Ltd","HealthNet TPO","Health Partners International ","HE Foundation","Heifer Nederland","HelpAge International","The William and Flora Hewlett Foundation","Haiti Hospital Appeal","Hope and Homes for Children","Homeless International","HiiL innovating Justice","Handicap International UK","UK - Home Office","HealthProm","Health Poverty Action","Human Relief Foundation","Heifer International South Africa","Helvetas Swiss Intercooperation","HTSPE","Stichting Humana","Hilfswerk Austria Zimbabwe","InterAction's NGO Aid Map","Inter-American Development Bank","International Bureau of Fiscal Documentation (IBFD)","Oxfam IBIS","ICA:UK","ICCO Cooperation","InterClimate Network","ICS","International IDEA","IDEO.org","IDH, the Sustainable Trade Initiative","International Development Law Organization (IDLO)","Canada - International Development Research Centre/Centre de recherches pour le d\u00e9veloppement international","Institute of Development Studies","Internews Europe ","International Fund for Agricultural Development (IFAD)","International Finance Corporation","International HIV/AIDS Alliance","IHE Delft Institute for Water Education","International Labour Organization","International Medical Corps UK","IMC WORLDWIDE","International Network for Bamboo and Rattan (INBAR)","Indigo Trust","International Network of People who Use Drugs (INPUD)","Integrity Action","InterAction","interburns","International Alert","IntraHealth International","IOD PARC","iPartner India","International Procurement Agency","International Planned Parenthood Federation","IRC","The International Rescue Committee","International Rescue Committee UK","Ireland - Department of Foreign Affairs and Trade","Islamic Relief Worldwide","Itad","International Treatment Preparedness Coalition (ITPC)","International Union for Conservation of Nature and Natural Resources","IUCN Nederlands Comit\u00e9","International Women's Development Agency","Interact Worldwide","Just Associates","Jeevika Trust","Japan International Cooperation Agency (JICA)","Karuna Trust","I Choose Life Africa","Kepa ry","Friends of Kipkelion","Royal Tropical Institute","KPMG East Africa","KPMG LLP","KwaAfrica","Landell Mills","Leonard Cheshire Disability","Link Community Development International","Link Community Development Scotland","Local Development and Small Projects Support ","LEAD International","Learning for Life","Lepra","LAMB Health Care Foundation","YMCA of Liberia","Lithuania, Ministry of Foreign Affairs","Lively Minds","Living Earth Foundation","mothers2mothers","Spain - Ministry of Foreign Affairs and Cooperation","MAG","Magariro","Mainline","Malaria Consortium","Mama Cash","MAMTA - Health Institute for Mother and Child","MannionDaniels","MapAction","marysmeals","Max Foundation","Stichting Mayday Rescue Foundation","Mercy Corps Europe","McKinsey & Company","Minist\u00e8re de l'Economie et des Finances du B\u00e9nin","New Zealand - Ministry of Foreign Affairs and Trade - New Zealand Aid Programme","GEMS Education Solutions","Micro Insurance Academy","MICAIA","MADE in Europe","Mifumi UK","Netherlands - Ministry of Foreign Affairs","MicroLoan Foundation","Mensen met een Missie","Mulanje Mission Hospital","Mott MacDonald Limited","Mondiaal FNV","Motivation","UK - Medical Research Council","Medical Research Centre (MRC), Sierra Leone","Meningitis Research Foundation","Marie Stopes International","Maxwell Stamp PLC","Muslim Aid","MVO Nederland","Nathan Associates London Ltd. ","Near East Foundation (NEF USA)","Network for Africa","NGO Federation of Nepal","Network of International Development Organisations in Scotland","Netherlands Institute for Multiparty Democracy (NIMD)","Aids Fonds - STOP AIDS NOW! - Soa Aids Nederland","CNV Internationaal","Netherlands Red Cross","Norad - Norwegian Agency for Development Cooperation","Norwegian People's Aid","Norwegian Refugee Council","Natural Resource Governance Institute","Natural Resources Institute, University of Greenwich.","Global Network of Sex Work Projects (NSWP)","United Nations OCHA Financial Tracking Service (UN OCHA FTS)","Republic of Korea","Overseas Development Institute","The OPEC Fund for International Development (OFID)","Omidyar Network Fund Inc.","One Acre Fund","One to One Children's Fund","Oxfam Novib","The Open University","openmindedly","Oxford Policy Management","Opportunity International UK","Options Consultancy Services","Orbis Charitable Trust","Oxfam GB","Oxfam India","Oxfam America","Practical Action","Pact ","Palladium International Ltd (UK)","partos","PAX","DNH Mali (Direction Nationale de l\u2019Hydraulique du Mali)","Palliative Care Support Trust","PEAS (Promoting Equality in African Schools)","People In Aid","PHASE Nepal","PHASE Worldwide","Project Harar","Private Infrastructure Development Group","People in Need","Plan Ireland Charitable Assistance Limited","Plan International UK","Plan International USA","Plan International Finland","Plan Nederland","Promundo-US","PONT","Pontis Foundation","Power International","Pragya India","Protecting Families Against HIV/AIDS","Penal Reform International","Progressio","Population Service International","PUM Netherlands","Pump Aid","PwC","Publish What You Fund","The Queen Elizabeth Diamond Jubilee Trust","RAIN Foundation","Railway Children","Stichting Red een Kind","Resource Extraction Monitoring","Restless Development","Retrak","Rahnuma-Family Planning Assocation of Pakistan","Rainforest Foundation UK","Relief International UK","Rojiroti UK","Royal Society for the Protection of Birds","Rutgers","Netherlands Enterprise Agency","Southern African Catholic Bishops' Conference Aids Office","Send a Cow Ethiopia","Send a Cow Uganda","Saferworld","The Salvation Army International Development UK","SECOURS CATHOLIQUE - CARITAS FRANCE","Scottish Catholic International Aid Fund (SCIAF)","Save the Children Netherlands","UK - Scottish Government","The Sabre Charitable Trust","Save the Children UK","Switzerland - Swiss Agency for Development and Cooperation (SDC)","Self Help Africa","Send a Cow","Sense International","ShelterBox","Shtrii Shakti","StreetInvest","Sweden, through Swedish International Development Cooperation Agency (Sida)","Signal","Simavi","Social Impact Lab CIC","Sympany+","Simprints","Siren Associates","Sonke Gender Justice","Stichting Kinderpostzegels Nederland","Ministry of Foreign and European Affairs of the Slovak Republic","SNV Netherlands Development Organisation","Solidaridad","Stichting Onderzoek Multinationale Ondernemingen (SOMO)","Soci\u00e9t\u00e9 Nationale des eaux du B\u00e9nin (SONEB)","SOS Children's Villages Kenya","SOS Children's Villages The Netherlands","SOS Sahel International UK","Sound Seekers Limited","SPARK","Samaritan's Purse UK","Sightsavers","Stichting Vluchteling","Support Trust for Africa Development (STAD)","Stars Foundation","Hivos","Street Child","Stromme Foundation","Survivors Fund (SURF)","Social Watch Benin","The Asia Foundation","Teach A Man To Fish","Trust for Africa's Orphans","Target TB","Global Alliance for TB Drug Development","TB Alert","Tropenbos International","The Coca-Cola Export Corporation","Terre des Hommes Netherlands","TEAR fund Nederland","Theatre for a Change UK","Theatre for a Change Malawi","The Freedom Fund","The Global Fund to Fight AIDS, Tuberculosis and Malaria","The International Children's Trust","Transparency International Bangladesh","The Leprosy Mission England and Wales","TradeMark East Africa","Transnational Institute","TechnoServe","Stichting Tosangana","Traidcraft Exchange","Transparency International Secretariat","Trianglen","Triple Line ","Trocaire (Northern Ireland)","Twaweza","Twin","Urgent Action Fund for Women's Human Rights","Urgent Action Fund-Africa","Urgent Action Fund Latin America and the Caribbean","Romania Ministry of Foreign Affairs","Union of Agricultural Work Committees","UK - Ministry of Defence","United Mission to Nepal","United Nations Joint Programme on HIV and AIDS Secretariat (UNAIDS)","International Service","United Nations Capital Development Fund","United Nations Development Programme (UNDP)","United Nations Educational, Scientific and Cultural Organization (UNESCO)","United Nations Population Fund","UN-Habitat","United Nations Children's Fund (UNICEF)","United Work","United States","University of Birmingham","United Nations Office for the Coordination of Humanitarian Affairs (OCHA)","United Nations Office for Project Services (UNOPS)","UN Pooled Funds","UN Women","Upper Quartile","United States Agency for International Development (USAID)","UNITAID","UTZ","Vision Aid Overseas","Varkey Foundation","Vision for a Nation Foundation","Viva","VNG International","Voluntary Service Overseas (VSO)","Stichting Woord en Daad","Water for People","World Association for Christian Communication (UK)","Wageningen University & Research - Stichting Wageningen Research","WASH Alliance International","War Child Holland","War on Want","WASTE advisers on urban environment and development","Water Witness International","WaterAid","Water Works","World Child Cancer UK","Women and Children First (UK)","Women's Environment & Development Organization","World Economic Forum Geneva","Welbodi Partnership","Wellfound","Wemos Foundation","Women Environmental Programme","UK - Welsh Government's Wales for Africa Programme","World Federalist Movement - Institute for Global Policy","United Nations World Food Programme (WFP)","Women for Women International (UK)","Women's Global Network on Reproductive Rights","World Health Organization","Wetlands International","WNF Wereld Natuur Fonds","WO=MEN, Dutch Gender Platform","Womankind Worldwide","The World Bank","World Economic Forum","War on Want NI","Women Peacemakers Program","Water & Sanitation for the Urban Poor (WSUP)","Windle Trust Kenya","World University Service of Canada","World Vision International","World Vision Netherlands","World Vision UK","WWF-UK","World Wide Fund for Nature - Pakistan","Win Win Strategies","WYG International","Youth Business International","Y Care International","Young Innovations Pvt. Ltd","Youth Net and Counselling - YONECO","Zimbabwe Educational Trust","Zimmerman & Zimmerman","Zing","ZOA"],"Publisher Registry Id":["_admin","aai","aanl","aasaman","aauk","abaseen","ablechildafrica","abt","acaa","acf","achest","acord","across","act4africa","acted","addinternational","adpp","adrasom","adrauk","adsb","aecom","aeras","aet","af","afd","afdb","afemena","afewinternational","afghanaid","aflatoun","afrikids","ageintl","agencia_do_zambeze","agriprofocus","agriterra","ai_1064413","aics","aiddata","akfuk73","aktis","akvo","alcis","alcrer-1","alfalit","allwecan","amnesty","amrefeth","amrefha","amrefhq","amrefkenya","amrefmw","amrefnl","amrefug","ancb_benin","anda","apc","appro-af","appro-eu","apt","aqua4all","arfh","ark","art19","asdb","asf","asi","asil","atnf","atosuk","atsf","ausgov","awepa","awid","base_22","basicneeds","bauk","bbcmediaaction","bcm-cf","be-dgd","beesfordevelopment","bioclimate","blueventures","bmgf","bmub_iki","bmz","bond","bothends","bracintl","bsr_admin","btc-ctb","buildafrica","bvs-nepal","cabi","cafod","caid","caid_ireland","cal","camfed","canoncollinstrust","cardnoem","carenederland","caritas_denmark","caritas_serbia","caritasfin","cbi-nigeria","ccc","ccdnigeria","cda","cdc","cdi","cecily","ced","cepr","cerf","cfyas","childfund","childhopeuk","cibe","cic","cif","cifal","ciks","ciuk","climate_centre","clingendael","cocnl_publisher","coda","coffey","colalife","commonwealthsecretariat","concernuk","cord","cordaid","cost_uk","cprojects","cr","crane","creausa-org","crs_vyf","ctc","cu","cuammtrustees","cww","cyan","dai","dai-e","dance4life","danida","dapp","dc","dca","dciecpatnl","ddp","dec-uk","deccadmin","decp","defra_transparency","delivery_associates","dfid","dggf_financing_local_smes","diltuk","dipr","dla","dochas","doh","dotw_uk","draf","drf","dthfxx12","dwp","ebrd","ec-devco","ec-echo","ec-fpi","ec-near","ecuk","edt_kenya","eel","eib","eif","eip","eiuk","ejc","emms","eti","evc","ewb_canada","excellent","fa","fact","fairfood","fairtrade_international","fao","fcam","fco","ff","ffi_publisher","fh","finance_canada","finland_mfa","fm","fmo","foe-ghana","foe_ewni","foei","foenl","foundation_center","france","frankwater","free_press_unlimited","freeagirl","friendsofpwyf","ftm-291333","fwf","fyf","gac-amc","gain","gan","gavi","gb-chc-220949","gecfundmanagerpwc","gif","girlsnotbrides","giro555","gl","globalgiving","gnpplus","goal","gpe","gppac","growmovement_admin","hagar_uk","hai","halo","handinhand","hauk","healthnet","healthpartners-international","hefoundation","heifernederland","helpage_international","hewlett-foundation","hha","hhc","hi","hiil_mfa","hiuk","hooda","hp_12","hpa","hrf","hsa","hsi","htspe","humana_houben","hwa-zm","ia_nam","iadb","ibfd","ibis_denmark","icauk","icco-cooperation","icn","ics","idea","ideo_org","idh","idlo","idrccrdi","ids","ieu","ifad","ifcwbg","ihaa","ihedelft","ilo","imc_uk","imcw_admin","inbar","indtrust","inpud_admin","integrity_action","interaction","interburns","international-alert","intrahealth","iodparc","ip-india","ipa","ippf","irc","irc_inc","irc_uk","irishaid","irw","itad","itpc","iucn","iucn_nl","iwda","iww_publish","jass","jeevika_trust","jica","karuna","ke-ngc-3372","kepa","kipkelion","kit","kpmgea","kpmgllp","kwaafrica","landell-mills","lcd_admin","lcdi_admin","lcds","ldsps","lead_international","learningforlife","lepra","lhcf","libymca","lithuania_mfa","livelyminds","livingearth12","m2m_sa","maec","mag","magariro","mainline","malariaconsortium","mamac","mamta_himc","manniondaniels","mapaction","marysmeals","max-foundation","maydayrescue","mce","mck","mefbenin","mfat","mgcubed","mia_india","mic-uk","mie-1134415","mifumi_uk","minbuza_nl","mlf","mm1","mmh","mml","mondiaalfnv","motivation","mrc","mrc-sierra-leone","mrf","msi","mstamp","muslimaid","mvo_nederland","nathan","nef_usa","network4africa","nfn","nidos","nimd-hq","nl-kvk-41207989","nl-kvk-54436222-27541","nlrc","norad","npa","nrc","nrgi","nri","nswp","ocha_fts","odakorea","odi","ofid","omidyarnetwork","oneacrefund","onetoonecf","onl","open_university","openmindedly","opml","opportunity-international-uk","options","orbis_uk","oxfamgb","oxfamindia","oxfamus","pa","pact","palladium","partos_nl","pax","pca-gire","pcst","peas","peopleinaid","phase-nepal","phase_worldwide","phe","pidg","pin","plan_ireland","plan_uk","plan_usa","planinternationalfinland","plannlno","pmo-us","pont","pontis","power","pragya","prefa_1","pri","progressio","psi","pumnl","pumpaid","pwc","pwyf","qedjt","rainfoundation","rc","redeenkind","rem","restless","retrak","rfpap","rfuk","ri-uk","rojiroti","rspb_","rutgers","rvo","sacbc","sacethiopia","sacu","saferworld","said-uk","sccf","sciaf","scnl","scottish_government","sct","scuk","sdc_ch","self-help-africa","sendacow","sense_international","shelterbox","shtrii_shakti","si","sida","signal","simavi","simlab","simone_sympany","simprints","siren","sjg","skn","slovakaid","snv","solidaridad","somo","soneb-benin","soscvkenya","sosnl","sossaheluk","soundseekers","spark","spuk","ss-org","st_vluchteling","stad","starsfoundation","stichting_hivos","street_child","stromme_ug","surf","swb_1","taf","tamtf","tao-03473165","targettb","tb-a","tbalert","tbi","tccec","tdh_nl","tear","tfac","tfacmalawi","thefreedomfund","theglobalfund","theict","tib","tlmew","tmea","tni","tns","tos-nl","traidcraft","transparency-international","trianglen","tripleline_crownagents","troc","twaweza","twin-iati","uaf","uaf-africa","uafla","uasd","uawc","ukmod","umn","unaids","unais","uncdf","undp","unesco","unfpa","unhabitat","unicef","united_work","unitedstates","universityofbirmingham","unocha","unops","unpf","unw","uq","usaid","utd","utz","vao","varkeyfoundation","vfan","viva","vngi","vso","w-d","w4p","wacc-uk","wageningen_ur","wai","warchildholland","waronwant","waste","water-witness-international","wateraid","waterworks","wccuk","wcf","wedo","weforum_geneva","welbodipartnership","wellfound","wemos","wep","wfa","wfm-igp","wfp","wfwiuk","wgnrr_iati","who","wi","wnf","wo-men","womankindworld","worldbank","worldeconomicforum","wowni","wpp","wsup","wtk","wusc","wvi","wvnld","wvuk","wwf-uk","wwfpakistan","wws","wygi","ybi","ycare","yipl","yoneco1997","zet","zimmzimm","zing","zoa"],"Reporting Org on Registry":["PK-VSWA-511-2007","NL-KVK-27264198","NL-KVK-41217595","NP-SWC-27693","GB-CHC-274467","GB-CHC-1157009","GB-CHC-326859","US-EIN-042347643","GB-CHC-1096908","GB-CHC-1047501","UG-RSB-73316","GB-CHC-283302","KE-NGC-9381","GB-COH-04276635","FR-SIRET-4028868160030","GB-COH-294860","mz-moj-64vq1","KE-NGC-663","GB-CHC-1074937","NL-KVK-33226495 ","GB-COH-01846493","US-EIN-522044704","GB-CHC-313139","47111","FR-3","46002","LB-MOI-18291","NL-KVK-34148682","GB-CHC-1045348","NL-KVK-34229026","GB-CHC-1141028","GB-CHC-1128267-8","XI-IATI-ADVZ","NL-KVK-30204842","NL-KVK-41048542","GB-CHC-1064413","XM-DAC-6-4","US-501c3-522318905","GB-COH-1100897","GB-COH-08327972","NL-KVK-27327087","GB-COH-5155300","BJ-IFU-6201200599008","MZ-MOJ-203D","GB-CHC-291691","NL-KVK-40530953","ET-MFA-0001989741","GB-CHC-261488","KE-RCO-C1-61","KE-NCB-93175","MW-NBM-R1527","NL-KVK-41150298","UG-NGB-5914-252","BJ-IFU-6201408024805","MZ-MOJ-F30G1No89","US-EIN-943287156","AF-MOE-1212","BE-GTCF-630789842","GB-CHC-290836","NL-KVK-27248417","NG-CAC-5938","GB-COH-04589451","GB-CHC-327421","46004","BE-BCE-0447404580","GB-COH-2732176","GB-CHC-1049160","NL-KVK-58279199","GB-COH-01245534","NL-KVK-53744993","AU-5","NL-KVK-34106722","US-EIN-521291786","NP-DAO-DANG-18-046/47","GB-CHC-1079599","GB-CHC-1108464","GB-CHC-1076235","MW-CNM-BCM-CF ","XM-DAC-2-10","GB-CHC-1078803","GB-SC-044007","GB-CC-1098893","DAC-1601","XI-IATI-IKI","DE-1","GB-CHC-1068839","NL-KVK-41210098","NL-CCI-20081098 ","US-EIN-52-1764268","BE-BCE_KBO-0264814354","GB-CHC-298316","NP-SWC-27288","XI-IATI-CABI","GB-CHC-285776","GB-CHC-1105851","IE-CHY-6998","GB-COH-03259922","GB-CHC-1029161","GB-CHC-1102028","GB-COH-05543952","NL-KVK-41158230","DK-CVR-29439915","RS-APR-17062603","FI-PRO-139407","cbi-nigeria","NL-KVK-41210820","NG-CAC-IT-23286","US-IRS-562339052","GB-COH-03877777","US-EIN-56-2460366","GB-CHC-1071660","GB-CHC-293734","GB-CHC-287287","XM-OCHA-CERF","NL-KVK-32108345","US-EIN-54-0536100","GB-CHC-328434","BE-BCE_KBO-0410644946","GB-CHC-1020488","47135","GB-SC-037597","ciks","GB-CHC-202615","NL-KVK-27267681","NL-KVK-41152832","NL-KVK-40530156","GB-CHC-1000717","GB-COH-3799145","GB-CHC-1142516","XI-IATI-CWSEC","GB-CHC-1092236","GB-CHC-1070684","NL-KVK-41160054","GB-COH-8159144","GB-CHC-326568","GB-CHC-1055436","UG-NGB-5914-9186","US-EIN-31-1812979","US-EIN-13-5563422","GB-CHC-1152010","GB-CHC-272465","TN-TIN-102123727","GB-CHC-1150214","GB-CHC-1129603","NL-KVK-41236410","GB-COH-1858644","NL-KVK-34197379","DK-1","GPAF-IMP-031","GB-COH-07629751","DK-CVR-36980214","NL-KVK-41208813","GB-CHC-1046001","GB-CHC-1062638","GB-4","NL-KVK-27284008","GB-7","GB-COH-08333641","GB-GOV-1","NL-KVK-61172863","GB-CHC-1122924","GB-COH-06368740","US-EIN-522043740","IE-CHY-6410","GB-GOV-10","GB-CHC-1067406","US-EIN-27-5026463","US-EIN-27-5026293","ZA-ROC-1999/05072/08","GB-9","XI-IATI-EBRD","XI-IATI-EC_DEVCO","XI-IATI-EC_ECHO","XI-IATI-EC_FPI","XI-IATI-EC_NEAR","GB-COH-01650169","KE-RCO-270901","GB-CHC-1154085","XM-DAC-918-3","XM-DAC-1409","BE-BCE_KBO- 0550758080","GB-CHC-289036","NL-KVK-41078390","GB-OSCR-SC032327","GB-COH-3578127","GB-CHC-1089879","CA-CRA-89980-1815-RR0001","GB-CHC-1094478","GB-COH-01926828","ZW-ES12-WO17/89","NL-KVK-34141098","DE-AG-VR7795","XM-DAC-41301","NI-MIGOB-3602","GB-GOV-3","NP-DAO-27-127/062/063","GB-COH-0277068","GB-CHC-328273","CA-4","FI-3","GB-COH-3008440","NL-KVK-27078545","GH-DSW-258","GB-CHC-281681","NL-KVK-40535338","NL-KVK-40530467","US-EIN-131837418","FR-6","GB-CHC-1121273","NL-KVK-52957535","NL-KVK-34308169","US-EIN-47-4128047","GB-CHC-291333","NL-KVK-34111374","GB-CHC-250456","CA-3","30001","NP-SWC-13712","47122","GB-CHC-220949","GB-COH-03580586-GEC","GB-CHC-1171353","GB-CHC-1154230","NL-KVK-27302841","ZA-CIPC-2001/005850/08","US-EIN-300108263","NL-KVK-41214768","GB-CHC-1107403","XM-DAC-47501","NL-KVK-41217404","GB-CHC-1139083","GB-CHC-1143852","NL-KVK-41207580","halo","GB-CHC-1113868","GB-CHC-1024903","NL-KVK-41211943","GB-COH-03054929","NL-KVK-58183167","NL-KVK-20093733","GB-COH-1762840","US-EIN-941655673","GB-CHC-1117528","GB-CHC-1089490","GB-CHC-1017255","NL-KVK-27290536","GB-CHC-1082565","GB-6","GB-COH-4887855","GB-CHC-1837621","GB-CHC-1126281","ZA-NPO-013484","CH-FDJP-CHE-105.834.763","GB-COH-06407873","NL-KVK-30285304","XI-IATI-035026724","US-EIN-13-3287064NAM","XI-IATI-IADB","NL-KVK-41197411","DK-CVR-88136411","GB-CHC-1090745","NL-KVK-56484038","GB-COH-06587734","NL-KVK-41188664","XM-DAC-47058","US-EIN-27-3755556","NL-KVK-53521129","XM-DAC-47059","XM-DAC-301-2","GB-COH-877338","GB-CHC-1148404","XM-DAC-41108","XM-DAC-903","GB-CHC-1038860","NL-KVK-41146484","XM-DAC-41302","GB-CHC-1093861","GB-COH-02651349","XM-DAC-47064","GB-CHC-1075920","GB-COH-08828458","GB-COH-4884328","US-EIN-13-3287064","GB-CHC-1122299","GB-COH-2153193","US-EIN-550825466","GB-COH-03613839","GB-CHC-1114944","NL-KVK-32037590","GB-CHC-229476","NL-KVK-41151952","US-EIN-13-5660870","GB-CHC-1065972","XM-DAC-21-1","GB-CHC-328158","GB-COH-1869600","BW-CIPA-CO20151011","XM-DAC-30011","NL-KVK-41180885","AU-ACNC-19242959685","GB-CHC-1001698","US-EIN-06-1597-668","GB-CHC-291167","XM-DAC-701-8","GB-CHC-327461","KE-NGC-3372","FI-PRO-143138","GB-CHC-1142476","NL-KVK-33185213","TZ-BRLA-36057","GB-COH-OC301540","GB-CHC-1054369","GB-COH-1574821","GB-CHC-218186","GB-CHC-1048007","GB-SC-SC037959","TR-MOI-27-018-163","GB-COH-4075590","GB-CHC-1105277","GB-CHC-213251","GB-CHC-1101217","LR-MPEA-NGO-AC-0298","XM-DAC-84","GB-CHC-1125512","GB-CHC-800672","ZA-NPO-025-359","ES-DIR3-E04585801","GB-CHC-1083008","MZ-MOJ-F2G1No4","NL-KVK-41209946","GB-CHC-1099776","NL-KVK-41202535","IN-","GB-COH-04105827","GB-CHC-1126727","GB-SC-SCO45223","NL-KVK-34219433","NL-KVK-855689493","GB-SC-SC030289","GB-COH-FC012665","XM-DAC-236","NZ-1","GB-COH-07669775","IN-ITA-1886","GB-CHC-1120413","GB-COH-1134415","GB-CHC-1038785","XM-DAC-7","GB-CHC-1104287","NL-KVK-41149831-3","MW-MRA-20125995","GB-COH-1110949","NL-KvK-41177601","GB-CHC-1079358","GB-COH-RC000346","SL-NRA-1001562-8","GB-CHC-1091105","GB-COH-1102208","GB-COH-00637978","GB-CHC-295224","NL-KVK-30195730","GB-COH-02768268","US-EIN-13-1624114","GB-CHC-1120932","NP-DAO-27-689/063/064","GB-SC-035314","NL-KVK-27189542","NL-KVK-41207989","NL-KvK-54436222-27541","NL-KVK-40409352","NO-BRC-971277882","NO-BRC-871033552   ","NO-BRC-977538319","US-EIN-20-4451390","GB-COH-00986729","GB-COH-SC349355","XM-OCHA-FTS","KR-GOV-021","GB-CHC-228248","XI-IATI-OFID","US-EIN-20-1173866","US-DOS-64562614","GB-CHC-1086159","NL-KVK-27108436","GB-CHC-000391","IM-CR-024714B","GB-COH-3122495","GB-COH-05322719","GB-COH-2695347","GB-CHC-1061352","GB-CHC-202918","IN-MCA-U74999DL2004NPL131340","US-EIN-23-7069110","GB-COH-871954","US-EIN-13-2702768","GB-COH-2394229","NL-KVK-34214586","NL-KVK-30214009","ML-NIF-400100027H","MW-RG-2977","GB-CHC-1126550","GB-CHC-1078768","NP-DAO-531/062/063","GB-CHC-1112734","GB-CHC-1094272","XM-DAC-47086","CZ-ICO-25755277","IE-CHY-15037","GB-COH-1364201","US-IRS-13-5661832","FI-PRO-1498487-2","NL-KVK-41198890","US-EIN-26-1931968","GB-CHC-1125948","SK-ZRSR-31784828","GB-CHC-1059996","IN-AR-775","UG-NGB-63360","GB-COH-04154075","GB-CHC-294329","21032","NL-KVK-41160229","GB-CHC-1077889","GB-COH-03580586","GB-COH-07676886","GB-CHC-1145640","NL-KVK-34200988","GB-CHC-1058991","NL-KVK-41022454","GB-COH-4905100","GB-CHC-1127488","GB-CHC-1122799","PK-MSW-633-1965","GB-CHC-1138287","GB-CHC-1098106","GB-CHC-1147083","GB-CHC-207076","NL-KVK-41193594","NL-KVK-27378529","ZA-NPO-061-870","ET-CSA-0638","SACU","GB-CHC-1043843","GB-CHC-214779","FR-SIRET-77566669600015","GB-SC-SC012302","NL-KVK-41201463","GB-GOV-21","GB-CHC-1105489","GB-COH-213890","CH-4","IE-CHY-6663","GB-CHC-299717","GB-CHC-1076497","GB-CHC-1096479","NP-SWC-00589","GB-CHC-1127206","SE-0","GB-CHC-1151615","NL-KVK-40594571","GB-COH-7557881","NL-KVK-30285304","GB-COH-8835431","GB-COH-NI630024","ZA-PBO-064-502 ","NL-SKN-41167934","XM-DAC-69-1","NL-KVK-41152786","NL-KVK-51756811","NL-KVK-41223308","BJ-IFU-3200700033415","KE-NGCB-149","NL-KVK-41197577","GB-COH-2100867","GB-COH-04354941","NL-KVK-41213450","GB-CHC-1001349","GB-CHC-207544","NL-KVK-41149486","NL-KVK-27251823","GB-CHC-1087997","NL-KVK-41198677","GB-CHC-1128536","XI-IATI-5914-1107","GB-CHC-1065705","BJ-IFU-6201101048400","US-EIN-941191246","GB-CHC-1112699","GB-CHC-1069208","GB-CHC-1098752","US-EIN-13-4128413","GB-CHC-1071886","tbi","XI-IATI-1001","NL-KVK-41149287","NL-KVK-41177385","GB-CHC-1104458","MW-NBM-00139","GB-COH-1158838","47045","GB-CHC-254781","BD-NAB-1301","GB-CHC-1050327","KE-RCO-CPR/2009/5689","NL-KVK-41201806","US-EIN-13-2626135","NL-KVK-27285408-6","GB-COH-3031674","21033","DK-CVR-33985339","GB-COH-03788027","GB-COH-NI21482","TZ-BRE-63966","GB-CHC-291824","US-EIN-03-0419743","KE-NCB-200201282375","CO-CCB-00159397","XM-DAC-77","PS-MOI-RA-22220-A","GB-GOV-8","XI-IATI-1002","XM-DAC-41110","GB-CHC-1069182","41111","XM-DAC-41114","41304","41119","41120","41122","NL-KVK-67143555","US-USAGOV","GB-EDU-133784","XM-DAC-41127","41AAA","XI-IATI-UNPF","XM-DAC-411124","GB-COH-SC301345","US-GOV-1","XM-DAC-30010","NL-KVK-34159275","GB-CHC-1081695","GB-CHC-1145119","GB-CHC-1140123","GB-CHC-1053389","NL-KVK-27195046","GB-CHC-313757","NL-KVK-41118168","US-EIN-84-1166148","GB-COH-2082273","NL-KVK-09098104","XI-IATI-WAI","NL-KVK-41215393","GB-CHC-208724","NL-KVK-41172933","GB-COH-353570","GB-CHC-288701","GB-CHC-1158206","GB-CHC-1084729","GB-CHC-1085096","US-EIN-52-1238773","CH-FDJP-66004229946","GB-CHC-1125217","GB-CHC-1110434","NL-KVK-41201644","NG-CAC-495140","XM-DAC-12-22","NL-KVK-41153698","XM-DAC-41140","GB-CHC-1115109","PH-SEC-FN200806591","XM-DAC-928","NL-KVK-9099028","NL-KVK-41177588","NL-KVK-27293385","GB-CHC-328206","44000","US-EIN-203908371","GB-COH-NI011322","NL-KVK-56083459","GB-COH-5419428","KE-NCB-OP/218/051/915/65","CA-CRA_ARC-119304848","US-IRS-95-3202116","NL-KVK-41179943","GB-CHC-285908","GB-COH-1081247","21-PK-WWF"," NL-KVK-66926262","GB-COH-3195485","GB-CHC-1123946","GB-CHC-1109789","NP-CRO-45995/063/064","MW-CNM-C076-1999","GB-CHC-327519","NL-KVK-51018586","GB-CHC-1133342","NL-KVK-41009723"],"Reporting Orgs in Data":["PK-VSWA-511-2007;XI-IATI-VSWA-511-2007","NL-KVK-27264198","NL-KVK-41217595","NP-SWC-27693","GB-CHC-274467;GB-CHC-27446721","GB-CHC-1157009","GB-CHC-326859","US-EIN-042347643","GB-CHC-1096908","GB-CHC-1047501","UG-RSB-73316","GB-CHC-283302","KE-NCB-9381;KE-NGC-9381","GB-COH-04276635","FR-RCS-402886816;FR-SIRET-4028868160030","GB-COH-294860","mz-moj-64vq1","KE-NGC-663","GB-CHC-1074937","NL-KVK-33226495","GB-COH-GB-COH-01846493","US-EIN-522044704","GB-CHC-313139","47111","FR-3","46002","LB-MOI-18291","NL-KVK-34148682","GB-CHC-1045348","NaN","GB-CHC-1141028","GB-CHC-1128267-8;null","XI-IATI-ADVZ","NL-KVK-30204842",";NL-KVK-41048542;execution;finished","GB-CHC-1064413","XM-DAC-6-4","US-501c3-522318905","GB-COH-1100897","GB-COH-08327972","NL-KVK-27327087","GB-COH-5155300","BJ-IFU-6201200599008","MZ-MOJ-203D","GB-CHC-291691","NaN","ET-MFA-0001989741","GB-CHC-261488","KE-RCO-C1-61","KE-NCB-93175","MW-NBM-R1527","NL-KVK-41150298","UG-NGB-5914-252","BJ-IFU-6201408024805","MZ-MOJ-F30G1No89","US-EIN-943287156","AF-MOE-1212","BE-GTCF-630789842","GB-CHC-290836","NL-KVK-27248417;null","NG-CAC-5938","GB-COH-04589451","GB-CHC-327421","46004","BE-BCE-0447404580","GB-COH-2732176","GB-CHC-1049160","NaN","GB-COH-01245534","NL-KVK-53744993","AU-5","NL-KVK-34106722","US-EIN-521291786","NP-DAO-DANG-18-046/47","GB-CHC-1079599","GB-CHC-1108464","GB-CHC-1076235","MW-CNM-BCM-CF","XM-DAC-2-10","GB-CHC-1078803","GB-SC-044007","GB-CC-1098893","DAC-1601;XM-DAC-DAC-1601","XI-IATI-IKI","DE-1","GB-CHC-1068839","NL-KVK-41210098","NL-CCI-20081098","US-EIN-52-1764268","BE-BCE_KBO-0264814354","GB-CHC-298316","NP-SWC-27288","XI-IATI-CABI","GB-CHC-285776","GB-CHC-1105851","IE-CHY-6998","GB-COH-03259922","GB-CHC-1029161","GB-CHC-1102028","GB-COH-05543952","NL-KVK-41158230","DK-CVR-29439915","RS-APR-17062603","FI-PRO-139407","NG-CAC-RC481360","NL-KVK-41210820","NaN","US-IRS-562339052","GB-COH-038777;GB-COH-03877777","US-EIN-56-2460366","GB-CHC-1071660","GB-CHC-293734","GB-CHC-287287","XM-OCHA-CERF","NL-KVK-32108345","US-EIN-54-0536100","GB-CHC-328434","BE-BCE_KBO-0410644946","GB-CHC-1020488","47134;47135","GB-SC-037597","ciks","GB-1-202615;GB-CHC-202615","NL-KVK-27267681","NL-KVK-41152832","NL-KVK-40530156","GB-CHC-1000717","GB-COH-3799145","GB-CHC-1142516","XI-IATI-CWSEC","GB-CHC-1092236","GB-CHC-1070684","NL-KVK-41160054","GB-COH-8159144","GB-CHC-326568","GB-CHC-1055436;null","UG-NGB-5914-9186","US-EIN-31-1812979","US-EIN-13-5563422","GB-CHC-1152010","GB-CHC-272465","TN-TIN-102123727","GB-CHC-1150214","GB-CHC-1129603","NL-KVK-41236410","GB-COH-1858644","NL-KVK-34197379","DK-1","MW-CNM-21;dm","GB-COH-07629751","DK-CVR-36980214","NL-KVK-41208813","GB-CHC-1046001","GB-CHC-1062638","GB-4;GB-GOV-4","NL-KVK-27284008","GB-7","GB-COH-08333641","GB-GOV-1","NL-KVK-61172863","GB-CHC-1122924","GB-COH-06368740","US-EIN-522043740","IE-CHY-6410","GB-10","GB-CHC-1067406","US-EIN-27-5026463","US-EIN-27-5026293","ZA-ROC-1999/05072/08","GB-9","XI-IATI-EBRD","XI-IATI-EC_DEVCO","XI-IATI-EC_ECHO","XI-IATI-EC_FPI","XI-IATI-EC_NEAR","GB-COH-01650169","KE-KROS-270901","GB-CHC-1154085","XM-DAC-918-3","XM-DAC-1409","XI-PB-BE550758080","GB-CHC-289036","NL-KVK-41078390","GB-SC-SC032327","GB-COH-3578127","GB-CHC-1089879","CA-CRA-89980-1815-RR0001","GB-CHC-1094478","GB-COH-01926828","ZW-ES12-WO17/89;ZW-PVO-WO1789","NL-KVK-34141098","DE-AG-VR7795","XM-DAC-41301","NI-MIGOB-3602","GB-3;GB-GOV-3","NP-DAO-27-127/062/063","GB-COH-0277068","GB-CHC-328273","CA-4","FI-3","GB-COH-3008440","NaN","GH-DSW-258","GB-CHC-281681","NL-KVK-40535338","NL-KVK-40530467;NL-KvK-40530467","US-EIN-131837418","FR-6;FR-SIREN-110-006-012","GB-CHC-1121273","NL-KVK-52957535","NL-KVK-34308169","US-EIN-47-4128047","GB-CHC-291333","NL-KVK-34111374","GB-CHC-250456","CA-3","30001","NP-SWC-13712","47122","GB-CHC-220949","GB-COH-03580586-GEC","GB-CHC-1171353","GB-CHC-1154230","NL-KVK-27302841","ZA-CIPC-2001/005850/08","NaN","NL-KVK-41214768","CHY6271;GB-CHC-1107403","XM-DAC-44101","NL-KVK-41217404","GB-CHC-1139083","GB-CHC-1143852","NL-KVK-41207580","GB-CHC-1001813","GB-CHC-1113868","GB-CHC-1024903","NL-KVK-41211943","GB-COH-03054929","NL-KVK-58183167","NL-KVK-20093733","GB-COH-1762840","US-EIN-941655673","GB-CHC-1117528","GB-CHC-1089490","GB-CHC-1017255","NL-KVK-27290536","FR-PDR-W691075333;GB-CHC-1082565;XI-IATI-W691075333","GB-6","GB-COH-4887855","GB-CHC-1837621","GB-CHC-1126281","ZA-NPO-013484","XI-IATI-CHE105834763;XI-IATI-CHFDJPCHE105834763","GB-COH-06407873","NL-KVK-30285304","AT-LPD-035026724;XI-IATI-035026724","US-EIN-13-3287064NAM","IADB;XI-IATI-IADB","NL-KVK-41197411","DK-CVR-88136411","GB-CHC-1090745","NL-KVK-56484038","GB-COH-06587734","NL-KVK-41188664","XM-DAC-47058","US-EIN-27-3755556","NL-KVK-53521129","XM-DAC-47059","XM-DAC-301-2","GB-COH-877338","GB-CHC-1148404","XM-DAC-41108","XM-DAC-903","21020;GB-CHC-1038860","NL-KVK-41146484","XM-DAC-41302","GB-CHC-1093861","GB-COH-02651349","XI-PB-402","GB-CHC-1075920","GB-COH-08828458","GB-COH-4884328","US-EIN-13-3287064","GB-CHC-1122299","GB-COH-2153193;GB-COH-21531930","US-EIN-550825466","GB-COH-03613839","GB-CHC-1114944","NL-KVK-32037590","GB-CHC-21023;GB-CHC-229476;null","NL-KVK-41151952","US-EIN-13-5660870","GB-CHC-1065972","XM-DAC-21-1","GB-CHC-328158","GB-COH-1869600","XI-IATI-BWCO20151011","XM-DAC-30011","NL-KVK-41180885","AU-ACNC-19242959685","GB-CHC-1001698","US-EIN-06-1597-668","GB-CHC-291167","XM-DAC-701-8","GB-CHC-327461","KE-NGC-3372","FI-PRO-143138","GB-CHC-1142476","NL-KVK-33185213","TZ-BRLA-36057;TZ-BRLA-36057-ACT2","GB-COH-OC301540","GB-CHC-1054369","GB-COH-1574821","GB-CHC-218186","GB-CHC-1048007","GB-SC-SC037959","XI-IATI-TR-MOI-27-018-163","GB-COH-4075590","GB-CHC-1105277","GB-CHC-213251","GB-CHC-1101217","LR-MPEA-NGO-AC-0298","XM-DAC-84","GB-CHC-1125512","GB-CHC-800672","ZA-NPO-025-359","ES-DIR3-E04585801","GB-CHC-1083008","NaN","NL-KVK-41209946","GB-CHC-1099776","NL-KVK-41202535","mam_in","GB-COH-04105827","GB-CHC-1126727","GB-SC-SCO45223","NL-KVK-34219433","NL-KVK-855689493","GB-SC-SC030289","GB-COH-FC012665","XM-DAC-236","NZ-1","GB-COH-07669775","IN-ITA-1886","GB-CHC-1120413","GB-COH-1134415","GB-CHC-1038785","XM-DAC-7","GB-CHC-1104287","NL-KVK-41149831","MW-MRA-20125995","GB-COH-1243967","NL-KVK-41177601;NL-KvK-41177601","GB-CHC-1079358","GB-COH-RC000346","SL-NRA-1001562-8 ","GB-CHC-1091105","GB-COH-1102208;null","GB-COH-00637978","GB-CHC-295224","NL-KVK-30195730","GB-COH-02768268","US-EIN-13-1624114","GB-CHC-1120932","NP-DAO-27-689/063/064","GB-SC-035314","NL-KVK-27189542","NL-KVK-41207989","NL-KVK-54436222;NL-KvK-54436222-27541","NL-KVK-40409352","NO-BRC-971277882","NO-BRC-871033552","977538319;NO-BRC-977538319","US-EIN-20-4451390","GB-COH-00986729","GB-COH-SC349355","XM-OCHA-FTS","KR-GOV-021","GB-CHC-228248","XI-IATI-OFID","US-EIN-20-1173866","US-DOS-64562614","GB-CHC-1086159","NL-KVK-27108436","GB-CHC-000391",";IM-CR-024714B","GB-COH-03122495;GB-COH-3122495","GB-COH-05322719","GB-COH-2695347","GB-CHC-1061352","GB-CHC-202918","IN-MCA-U74999DL2004NPL131340;oxfam_india","US-EIN-23-7069110","GB-COH-871954","US-EIN-13-2702768","GB-COH-02394229","NL-KVK-34214586;null","EIGEN;NL-KvK-30214009","null","MW-RG-2977","GB-CHC-1126550","GB-CHC-1078768","NP-DAO-531/062/063","GB-CHC-1112734","GB-CHC-1094272","XM-DAC-47086","CZ-ICO-25755277","IE-CHY-15037","GB-COH-1364201","US-IRS-13-5661832","FI-PRO-1498487-2","NL-KVK-41198890;NL-KvK-41198890","US-EIN-26-1931968","GB-CHC-1125948","SK-ZRSR-31784828","GB-CHC-1059996","IN-AR-775","UG-NGB-63360;UG-RSB-63360","GB-COH-04154075","GB-CHC-294329;null","21032;XI-IATI-21032","NL-KVK-41160229","GB-CHC-1077889","GB-COH-03580586","GB-COH-07676886","GB-CHC-1145640","NL-KVK-34200988","GB-CHC-1058991","NL-KVK-41022454","GB-COH-4905100","GB-CHC-1127488","GB-CHC-1122799","PK-MSW-633-1965","GB-CHC-1138287","GB-CHC-1098106","GB-CHC-1147083","GB-CHC-207076","NL-KVK-41193594","NL-KVK-27378529","ZA-NPO-061-870","ET-CSA-0638","UG-CHC-SACU_admin;sacu","GB-CHC-1043843","GB-CHC-214779","FR-SIRET-77566669600015","GB-SC-SC012302","NL-KVK-41201463","NaN","GB-CHC-1105489","GB-COH-213890","CH-4;XM-DAC-CH-4","IE-CHY-6663","GB-CHC-299717","GB-CHC-1076497","GB-CHC-1096479","NP-SWC-00589","GB-CHC-1127206","SE-0","GB-CHC-1151615","NL-KVK-40594571","GB-COH-7557881","NL-KVK-30285304","GB-COH-8835431","GB-COH-NI630024","ZA-PBO-064-502","NL-KVK-41167934","NaN","NL-KVK-41152786","NL-KVK-51756811","NL-KVK-41223308","BJ-IFU-32000700033415","KE-NGCB-149","NL-KVK-41197577","GB-COH-2100867","GB-CHC-1013870","NL-KVK-41213450;NL-KVK-NL-KVK-41213450","GB-CHC-1001349","GB-CHC-207544","NL-KVK-41149486","NL-KVK-27251823","GB-CHC-1087997","NL-KVK-41198677","GB-CHC-1128536","UG-NGB-5914-1107;XI-IATI-5914-1107","GB-CHC-1065705","BJ-IFU-6201101048400","US-AGO-941191246;US-EIN-941191246;null","GB-CHC-1112699","GB-CHC-1069208","GB-CHC-1098752","US-EIN-13-4128413","GB-CHC-1071886","NL-KVK-41155305","XI-IATI-1001","NL-KVK-41149287","NL-KVK-41177385;NL-KVK-41177385-2015083-NIJR2;NL-KVK-41177385-2016013-CARJR2;NL-KVK-41177385-2016021-NJR2;NL-KVK-41177385-2016046-EJR2;NL-KVK-41177385-2016054-SSJR2;NL-KVK-41177385-2016060-SJR2;NL-KVK-41177385-2016061-SSPJR;NL-KVK-41177385-2017013-IRQJR3;NL-KVK-41177385-2017021-NJR3;NL-KVK-41177385-2017054-SSJR3;NL-KVK-41177385-2017060-SJR3;NL-KVK-41177385-2017061-SSPJR2;NL-KVK-41177385-2017065-CARJR3","GB-CHC-1104458","MW-NBM-00139","GB-COH-1158838","47045","GB-CHC-254781","1301;BD-NAB-1301","GB-CHC-1050327","KE-RCO-CPR-2009-5689","NL-KVK-41201806","US-EIN-13-2626135","NL-KVK-27285408","GB-COH-3031674","21033;21033-1.0744;21033-1.0792;21033-1.0931-2;21033-1.0931-3;21033-1.0941;21033-1.1053;21033-1.2001;21033-1.2008;XM-DAC-21033","DK-CVR-33985339","GB-COH-03788027","GB-COH-NI21482","TZ-BRE-63966","GB-CHC-291824","US-EIN-03-041973","KE-NCB-200201282375","CO-CCB-00159397","77-AEP;77-ANAF;77-ANFP;77-ANI;77-MADR;77-MAI;77-MApN;77-MC;77-MDRAP;77-MECS;77-MFP;77-MJ;77-MOECL;77-MS;77-MSI;77-MTS;77-MoLFSPE;77-ROGov;77-RoCDep;77-RoSen;XM-DAC-77","XI-IATI-ec0fa982-ec2f-4462-99ba-a7a7d2cb9395","GB-GOV-8","XI-IATI-1002","XM-DAC-41110","GB-CHC-1069182","41111","XM-DAC-41114","81304;XM-DAC-41304","41119","41120","41122","NL-KVK-67143555","US-18;US-GOV-1;US-GOV-10;US-GOV-11;US-GOV-13;US-GOV-14;US-GOV-15;US-GOV-17;US-GOV-18;US-GOV-19;US-GOV-2;US-GOV-20;US-GOV-21;US-GOV-22;US-GOV-26;US-GOV-6;US-GOV-7;US-GOV-9;US-USAGOV","GB-EDU-133784","XM-DAC-41127","41AAA","XI-IATI-UNPF","XM-DAC-411124","GB-COH-SC301345","US-GOV-1","XM-DAC-30010","NL-KVK-34159275","GB-CHC-1081695","GB-CHC-1145119","GB-CHC-1140123","GB-CHC-1053389","NL-kvk-27195046","GB-CHC-313757","NL-KVK-41118168","US-EIN-84-1166148","GB-COH-2082273","NL-KVK-09098104","XI-IATI-WAI","NL-KVK-41215393","GB-CHC-208724","NL-KVK-41172933","GB-COH-353570","GB-CHC-288701","GB-CHC-1158206","GB-CHC-1084729","GB-CHC-1085096","US-EIN-52-1238773","XI-PB-CH-6600422994-6","GB-CHC-1125217","GB-CHC-1110434","NL-KVK-41201644","NG-CAC-495140","XM-DAC-12-22","NL-KVK-41153698","XM-DAC-41140","GB-CHC-1115109","PH-SEC-FN200806591","XM-DAC-928","NL-KVK-9099028","NL-KVK-41177588","NL-KVK-27293385","GB-CHC-328206","44000","US-EIN-20-3908371","GB-COH-NI011322","NL-KVK-56083459","GB-COH-5419428","KE-NCB-OP/218/051/915/65","CA-CRA_ARC-119304848","US-IRS-95-3202116","NL-KVK-41179943","GB-CHC-285908;null","GB-CHC-1081247;GB-COH-1081247    ;GB-COH-4016725","21-PK-WWF","NL-KVK-66926262","GB-COH-3195485","GB-CHC-1123946","GB-CHC-1109789","NP-CRO-45995/063/064","MW-CNM-C076-1999","GB-CHC-327519","NL-KVK-51018586","GB-CHC-1133342","NL-KVK-41009723"],"Reporting Orgs in Data (count)":[2,1,1,1,2,1,1,1,1,1,1,1,2,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,2,1,1,4,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,2,1,1,1,1,1,1,1,1,1,1,2,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,2,1,1,1,1,1,1,0,1,1,1,2,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,1,1,1,1,1,2,1,1,2,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,2,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,2,2,1,1,1,1,2,1,1,1,1,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,2,1,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,0,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,2,1,1,3,1,1,1,1,1,1,1,1,14,1,1,1,1,1,2,1,1,1,1,1,1,10,1,1,1,1,1,1,1,1,21,1,1,1,1,1,1,1,2,1,1,1,1,19,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,3,1,1,1,1,1,1,1,1,1,1,1],"Total File Size":[7969,395966,154370,28675,6920352,17864,22512,24792,17432,103715,71017,78111,82399,19530,41461,228907,3028,92885,78175,53378,32035,50059,25867,142953,2668174,38620086,7439,46561,15533,0,49860,75024,2288,123709,5924740,14085,1978833,54972313,49116,21926,557103,2163,998,21737,36008,0,39211,72607,36841,93132,48679,585405,3740,715,21763,6124,127897,50077,183497,3411220,14791,14792,196016,35434235,156231,184920,95940,0,14639,3001,47756777,296463,57695,36333,39045,14838,38705,12392,24615370,17678,10028,10654,62668657,1497845,20654706,103752,211655,190738,12471,1636448,19732,5341,124338,5753675,244575,55641,34771,339099,12629,2711,415519,230243,11642,2151,608,68767,0,12248,256471,145095,44997,10247,128775,24566642,252122,20063,192915,41609,62042,508546,22096,281519,431004,140799,102684,71641,12833,64120,16800,1709492,118479,25503,721231,37446,61593,36116,7605,119445,21324,23595,91592,44502,21367,42932,57149,1187055,56980,95747466,77379,32397,190352,288732,63640,114095,91818,81548,65863,12768,132166022,115899,20240,393423,48058,44559,4546,14238,17726,25771,34393,6161,1337394,217670717,22955071,4623891,60517960,6054,194082,7538,1187642,441610,50941,20243,205219,171307,6812,26960,20730,32023,80203,36688,3973,37102,15127603,33226,27830562,2949,2407,39867,521630,56476832,593,0,19646,27636,79130,389002,19426017,3048562,2656,574681,108778,48293,41103,143315,89066,38228808,1624080,28503,39827122,1010368,924001,27236,13600,44514,128257,0,629,10663,317387,35619,9258,25124,159529,423740,20363,11994,11217,2602,18653,88329,4153927,6386568,51273,28556,72964,27590,188280,7651,11524,80166,3806,13220,61149,8431,66436,9040,40973471,31444594,51742,221449,8106,3204176,5982,261406,35103,5618,209048,202584,59089859,6679,84951,3097056,23549926,777618,42891,6558480,9696,86822,35516,465479,12424,72058,164180,33256,123121,31365,12190,31261,70556,554329,240148,21003,425470,5329249,304453,30038,21949,251423,952318,260450,13064,124231,5578,170044911,5544,3877,38142,8714,107840,7151,2415,16209,2736,37298,26910,9169,233575,2460,20499,132985,10647,20378,1033276,15087,208976,31913,165008432,404731,0,90285,2379318,594535,12621,513375,13642,26363,7746,4886,396377,23913,36441,15232959,14220,12111,9593,4310,41124,59373697,12949,140870,1422,14636,47339,122714,379379,22039,3536,5181,68896,7967,65372,4285,46068,31819,4341,6339,342390,1770589,88970,3582385,19400420,39660,338680,543,15150,20860,66936533,5022272,3249,20953313,351335,25471,19951,50279296,61307,2730686,26567,59442,16295,16263,20043046,14983,2530,13630715,91341,315109,62493,462801,24209,12709,9162,40022,497,47210,46126,902201,18302,3065,560905,104558,252427,1373300,45487,3884,80884,7728,25753,21693,179332,109013,582207,14854,13108,508681,2002726,24667,1888673,67284,156295,16659,863070,490,17670,75196,24027,18997,23648,874319,11912743,22566,1305,234898,713441,4350,83456,144746,445315,0,32026,7253046,45780689,427743,203204,71313,753,11073,14655,657218774,22356,2074,14047,9225,14544,18514,37707,194146,3008,1517730,926685,176885,19124,8665,37389,5934,10965,2672873,64024,3075572,402666,9240,8614,470017,83653,13970,37099,1498,703757,10674,7118,39447,53917,38983,206148,4864,9879567,286787,36281,23333,595,32774937,68110,82824,81048,10140,77720,4981,93866,181084,371204,112181,1802032,62068,96624,23768,216015,58721,77188,1556953,7160,73045,45815,3344304,40821,263753,132526681,6566760,75970836,4521192,468209491,6816,616851658,1916,1073862,10289027,4263615,2008649,59760,671065553,430030,523793,13452,6570,7470,9867,306512,2205417,3305501,60001,14635,28608,93909,1657629,45956,56005,13861,16632114,16200,16259,48756,40749,2867,13730,20385,60379,51467,625,23882,28310234,119791,60342,40892609,627062,123386,33932,215153,323624331,10600,53704,15547,13524,3737,60068,601694,140752,261071,408036,8257,14603,60717,15813,97974,593,44804,20045,16162,13468,1562075]}},"id":"413e158d-2e1b-46bb-a73c-e53ab869181e","type":"ColumnDataSource"},{"attributes":{"callback":null,"plot":{"id":"992d5a9f-e431-43d9-a62f-bbac9e7b84df","subtype":"Figure","type":"Plot"},"tooltips":[["Publisher","@{Publisher Name}"],["Number of Activities","@{Activities}"],["Total File Size","@{Total File Size}"]]},"id":"9ce78559-c1bf-40e4-9f41-12c00be414b2","type":"HoverTool"},{"attributes":{},"id":"57d4826a-87a5-4046-814f-e8699a15400a","type":"ToolEvents"},{"attributes":{"fill_alpha":{"value":0.2},"fill_color":{"value":"blue"},"line_alpha":{"value":0.8},"line_color":{"value":"#7c7e71"},"line_width":{"value":0.5},"size":{"units":"screen","value":15},"x":{"field":"Activities"},"y":{"field":"Total File Size"}},"id":"f5362a3b-41d5-4688-b181-f66f1b7f67cc","type":"Circle"},{"attributes":{"formatter":{"id":"39f47acb-03e7-4277-95ab-62f2c35262a4","type":"LogTickFormatter"},"plot":{"id":"992d5a9f-e431-43d9-a62f-bbac9e7b84df","subtype":"Figure","type":"Plot"},"ticker":{"id":"510d0336-4782-4f35-904b-094b1703a49a","type":"LogTicker"}},"id":"991dd8fb-d2f8-45b1-8b9a-4d693d9944c2","type":"LogAxis"},{"attributes":{"dimension":1,"plot":{"id":"992d5a9f-e431-43d9-a62f-bbac9e7b84df","subtype":"Figure","type":"Plot"},"ticker":{"id":"ab69edd9-0a3b-4465-adb1-bdd9e1dcd693","type":"LogTicker"}},"id":"828799d6-83a2-426b-9e72-611edc2807f8","type":"Grid"},{"attributes":{"ticker":null},"id":"39f47acb-03e7-4277-95ab-62f2c35262a4","type":"LogTickFormatter"},{"attributes":{"num_minor_ticks":10},"id":"ab69edd9-0a3b-4465-adb1-bdd9e1dcd693","type":"LogTicker"},{"attributes":{"formatter":{"id":"1183c226-0e96-4d93-862c-a60572855b9f","type":"LogTickFormatter"},"plot":{"id":"992d5a9f-e431-43d9-a62f-bbac9e7b84df","subtype":"Figure","type":"Plot"},"ticker":{"id":"ab69edd9-0a3b-4465-adb1-bdd9e1dcd693","type":"LogTicker"}},"id":"65611cb1-d825-4e18-a129-6a9ebe5e8463","type":"LogAxis"},{"attributes":{"ticker":null},"id":"1183c226-0e96-4d93-862c-a60572855b9f","type":"LogTickFormatter"},{"attributes":{"plot":{"id":"992d5a9f-e431-43d9-a62f-bbac9e7b84df","subtype":"Figure","type":"Plot"},"ticker":{"id":"510d0336-4782-4f35-904b-094b1703a49a","type":"LogTicker"}},"id":"a2327bfa-ae49-4bbb-a0e7-289523b01785","type":"Grid"}],"root_ids":["992d5a9f-e431-43d9-a62f-bbac9e7b84df"]},"title":"Bokeh Application","version":"0.12.5"}};
+            var render_items = [{"docid":"54b6ca23-c527-4fa1-9367-0bb226fc0cda","elementid":"904ede4f-9e94-4c21-b476-ae77ba7a2d3e","modelid":"992d5a9f-e431-43d9-a62f-bbac9e7b84df"}];
+
+            Bokeh.embed.embed_items(docs_json, render_items);
+          };
+          if (document.readyState != "loading") fn();
+          else document.addEventListener("DOMContentLoaded", fn);
+        })();
+      },
+      function(Bokeh) {
+      }
+    ];
+
+    function run_inline_js() {
+
+      if ((window.Bokeh !== undefined) || (force === true)) {
+        for (var i = 0; i < inline_js.length; i++) {
+          inline_js[i](window.Bokeh);
+        }if (force === true) {
+          display_loaded();
+        }} else if (Date.now() < window._bokeh_timeout) {
+        setTimeout(run_inline_js, 100);
+      } else if (!window._bokeh_failed_load) {
+        console.log("Bokeh: BokehJS failed to load within specified timeout.");
+        window._bokeh_failed_load = true;
+      } else if (force !== true) {
+        var cell = $(document.getElementById("904ede4f-9e94-4c21-b476-ae77ba7a2d3e")).parents('.cell').data().cell;
+        cell.output_area.append_execute_result(NB_LOAD_WARNING)
+      }
+
+    }
+
+    if (window._bokeh_is_loading === 0) {
+      console.log("Bokeh: BokehJS loaded, going straight to plotting");
+      run_inline_js();
+    } else {
+      load_libs(js_urls, function() {
+        console.log("Bokeh: BokehJS plotting callback run at", now());
+        run_inline_js();
+      });
+    }
+  }(this));
+</script></div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Rory Scott.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

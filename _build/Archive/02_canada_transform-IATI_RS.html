@@ -1,0 +1,651 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Setup &mdash; Global Affairs Canada - Compliance Report 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Global Affairs Canada - Compliance Report 1.0 documentation" href="../index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Global Affairs Canada - Compliance Report
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Setup-and-Data-Acquisition">Setup and Data Acquisition</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Imports-and-Housekeeping">Imports and Housekeeping</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Getting-Original-IATI-Files">Getting Original IATI Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Merging-IATI-Files">Merging IATI Files</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Initial-Validation">Initial Validation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Schema-Validation">Schema Validation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Ruleset-Validation">Ruleset Validation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Method-Overview">Method Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Deliverables">Deliverables</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Deliverable-3.1.1">Deliverable 3.1.1</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Recipient-Countries">Recipient Countries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Participating-Organisations">Participating Organisations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Deliverable-3.1.2">Deliverable 3.1.2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Existence-of-Required-Fields">Existence of Required Fields</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#How-the-Required-Fields-are-Related">How the Required Fields are Related</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Deliverable-3.1.3">Deliverable 3.1.3</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Other-Identifier">Other Identifier</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Transactions">Transactions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Transaction-Provider-Organisation">Transaction Provider Organisation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Transaction-Receiver-Organisation">Transaction Receiver Organisation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Deliverable-3.1.4">Deliverable 3.1.4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Deliverable-3.1.5">Deliverable 3.1.5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Deliverable-3.1.6">Deliverable 3.1.6</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Thematic-Evaluation">Thematic Evaluation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Prescriptions">Prescriptions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Appendix-1:-Data-Workbook">Appendix 1: Data Workbook</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Global Affairs Canada - Compliance Report</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Setup</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/Archive/02_canada_transform-IATI_RS.ipynb.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS for nbsphinx extension */
+
+/* remove conflicting styling from Sphinx themes */
+div.nbinput,
+div.nbinput div.prompt,
+div.nbinput div.input_area,
+div.nbinput div[class*=highlight],
+div.nbinput div[class*=highlight] pre,
+div.nboutput,
+div.nbinput div.prompt,
+div.nbinput div.output_area,
+div.nboutput div[class*=highlight],
+div.nboutput div[class*=highlight] pre {
+    background: none;
+    border: none;
+    padding: 0 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+/* avoid gaps between output lines */
+div.nboutput div[class*=highlight] pre {
+    line-height: normal;
+}
+
+/* input/output containers */
+div.nbinput,
+div.nboutput {
+    display: -webkit-flex;
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+}
+@media (max-width: 540px) {
+    div.nbinput,
+    div.nboutput {
+        flex-direction: column;
+    }
+}
+
+/* input container */
+div.nbinput {
+    padding-top: 5px;
+}
+
+/* last container */
+div.nblast {
+    padding-bottom: 5px;
+}
+
+/* input prompt */
+div.nbinput div.prompt pre {
+    color: #303F9F;
+}
+
+/* output prompt */
+div.nboutput div.prompt pre {
+    color: #D84315;
+}
+
+/* all prompts */
+div.nbinput div.prompt,
+div.nboutput div.prompt {
+    min-width: 8ex;
+    padding-top: 0.4em;
+    padding-right: 0.4em;
+    text-align: right;
+    flex: 0;
+}
+@media (max-width: 540px) {
+    div.nbinput div.prompt,
+    div.nboutput div.prompt {
+        text-align: left;
+        padding: 0.4em;
+    }
+    div.nboutput div.prompt.empty {
+        padding: 0;
+    }
+}
+
+/* disable scrollbars on prompts */
+div.nbinput div.prompt pre,
+div.nboutput div.prompt pre {
+    overflow: hidden;
+}
+
+/* input/output area */
+div.nbinput div.input_area,
+div.nboutput div.output_area {
+    padding: 0.4em;
+    -webkit-flex: 1;
+    flex: 1;
+    overflow: auto;
+}
+@media (max-width: 540px) {
+    div.nbinput div.input_area,
+    div.nboutput div.output_area {
+        width: 100%;
+    }
+}
+
+/* input area */
+div.nbinput div.input_area {
+    border: 1px solid #cfcfcf;
+    border-radius: 2px;
+    background: #f7f7f7;
+}
+
+/* override MathJax center alignment in output cells */
+div.nboutput div[class*=MathJax] {
+    text-align: left !important;
+}
+
+/* override sphinx.ext.pngmath center alignment in output cells */
+div.nboutput div.math p {
+    text-align: left;
+}
+
+/* standard error */
+div.nboutput div.output_area.stderr {
+    background: #fdd;
+}
+
+/* ANSI colors */
+.ansi-black-fg { color: #3E424D; }
+.ansi-black-bg { background-color: #3E424D; }
+.ansi-black-intense-fg { color: #282C36; }
+.ansi-black-intense-bg { background-color: #282C36; }
+.ansi-red-fg { color: #E75C58; }
+.ansi-red-bg { background-color: #E75C58; }
+.ansi-red-intense-fg { color: #B22B31; }
+.ansi-red-intense-bg { background-color: #B22B31; }
+.ansi-green-fg { color: #00A250; }
+.ansi-green-bg { background-color: #00A250; }
+.ansi-green-intense-fg { color: #007427; }
+.ansi-green-intense-bg { background-color: #007427; }
+.ansi-yellow-fg { color: #DDB62B; }
+.ansi-yellow-bg { background-color: #DDB62B; }
+.ansi-yellow-intense-fg { color: #B27D12; }
+.ansi-yellow-intense-bg { background-color: #B27D12; }
+.ansi-blue-fg { color: #208FFB; }
+.ansi-blue-bg { background-color: #208FFB; }
+.ansi-blue-intense-fg { color: #0065CA; }
+.ansi-blue-intense-bg { background-color: #0065CA; }
+.ansi-magenta-fg { color: #D160C4; }
+.ansi-magenta-bg { background-color: #D160C4; }
+.ansi-magenta-intense-fg { color: #A03196; }
+.ansi-magenta-intense-bg { background-color: #A03196; }
+.ansi-cyan-fg { color: #60C6C8; }
+.ansi-cyan-bg { background-color: #60C6C8; }
+.ansi-cyan-intense-fg { color: #258F8F; }
+.ansi-cyan-intense-bg { background-color: #258F8F; }
+.ansi-white-fg { color: #C5C1B4; }
+.ansi-white-bg { background-color: #C5C1B4; }
+.ansi-white-intense-fg { color: #A1A6B2; }
+.ansi-white-intense-bg { background-color: #A1A6B2; }
+
+.ansi-default-inverse-fg { color: #FFFFFF; }
+.ansi-default-inverse-bg { background-color: #000000; }
+
+.ansi-bold { font-weight: bold; }
+.ansi-underline { text-decoration: underline; }
+
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast,
+.nboutput.nblast {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast + .nbinput {
+    margin-top: -19px;
+}
+
+/* nice headers on first paragraph of info/warning boxes */
+.admonition .first {
+    margin: -12px;
+    padding: 6px 12px;
+    margin-bottom: 12px;
+    color: #fff;
+    line-height: 1;
+    display: block;
+}
+.admonition.warning .first {
+    background: #f0b37e;
+}
+.admonition.note .first {
+    background: #6ab0de;
+}
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+</style>
+<div class="section" id="Setup">
+<h1>Setup<a class="headerlink" href="#Setup" title="Permalink to this headline">¶</a></h1>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [1]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">lxml.etree</span> <span class="k">as</span> <span class="nn">ET</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.float_format&#39;</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">&#39;</span><span class="si">%.2f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [2]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="c1"># set directories</span>
+<span class="n">RAW</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&quot;..&quot;</span><span class="p">,</span><span class="s2">&quot;data&quot;</span><span class="p">,</span> <span class="s2">&quot;raw&quot;</span><span class="p">)</span>
+<span class="n">INTERMEDIATE</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&quot;..&quot;</span><span class="p">,</span><span class="s2">&quot;data&quot;</span><span class="p">,</span> <span class="s2">&quot;intermediate&quot;</span><span class="p">)</span>
+<span class="n">FINAL</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&quot;..&quot;</span><span class="p">,</span><span class="s2">&quot;data&quot;</span><span class="p">,</span> <span class="s2">&quot;final&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="Getting-and-Merging-the-files">
+<h1>Getting and Merging the files<a class="headerlink" href="#Getting-and-Merging-the-files" title="Permalink to this headline">¶</a></h1>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [262]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="c1"># Show IATI files available</span>
+<span class="n">file_names</span> <span class="o">=</span> <span class="p">[</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">RAW</span><span class="p">,</span><span class="n">name</span><span class="p">)</span> <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">RAW</span><span class="p">)</span> <span class="k">if</span> <span class="n">name</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;.xml&quot;</span><span class="p">)]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">file_names</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+[&#39;../data/raw/status_2-3.xml&#39;, &#39;../data/raw/status_4.xml&#39;]
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [264]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="c1"># This cell takes all of the XML IATI files in the &#39;raw&#39; directory and merges them into one file</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Combining </span><span class="si">{}</span><span class="s2"> IATI files&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">file_names</span><span class="p">)))</span>
+
+<span class="n">big_iati</span> <span class="o">=</span> <span class="n">ET</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">file_names</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">.</span><span class="n">getroot</span><span class="p">()</span>
+
+<span class="n">merge_log</span> <span class="o">=</span> <span class="p">{</span><span class="n">file_names</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span> <span class="nb">len</span><span class="p">(</span><span class="n">big_iati</span><span class="o">.</span><span class="n">getchildren</span><span class="p">())}</span>
+
+<span class="k">for</span> <span class="n">xml_file</span> <span class="ow">in</span> <span class="n">file_names</span><span class="p">[</span><span class="mi">1</span><span class="p">:]:</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">ET</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">xml_file</span><span class="p">)</span><span class="o">.</span><span class="n">getroot</span><span class="p">()</span>
+    <span class="n">merge_log</span><span class="p">[</span><span class="n">xml_file</span><span class="p">]</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">getchildren</span><span class="p">())</span>
+    <span class="n">big_iati</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">getchildren</span><span class="p">())</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Files Merged: &quot;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">file</span><span class="p">,</span> <span class="n">activity_count</span> <span class="ow">in</span> <span class="n">merge_log</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;|--&gt; </span><span class="si">{}</span><span class="se">\t\t</span><span class="s2">:</span><span class="se">\t</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">activity_count</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;|----&gt; </span><span class="si">{}</span><span class="se">\t\t</span><span class="s2">:</span><span class="se">\t</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;total</span><span class="se">\t\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">big_iati</span><span class="o">.</span><span class="n">getchildren</span><span class="p">())))</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Combining 2 IATI files
+Files Merged:
+|--&gt; ../data/raw/status_2-3.xml              :       1172
+|--&gt; ../data/raw/status_4.xml                :       2718
+|----&gt; total                         :       3890
+</pre></div></div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [265]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">INTERMEDIATE</span><span class="p">,</span><span class="s2">&quot;combined.xml&quot;</span><span class="p">),</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">out_file</span><span class="p">:</span>
+          <span class="n">out_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">et</span><span class="o">.</span><span class="n">tostring</span><span class="p">(</span><span class="n">big_iati</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf8&#39;</span><span class="p">,</span> <span class="n">pretty_print</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="Flattening">
+<h1>Flattening<a class="headerlink" href="#Flattening" title="Permalink to this headline">¶</a></h1>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [1]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="n">transaction_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
+    <span class="n">columns</span><span class="o">=</span><span class="p">[</span>
+        <span class="s1">&#39;iati-identifier&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;activity-status&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;recipient-countries&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;recipient-regions&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;ref&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;humanitarian&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;transaction-type&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;transaction-date&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;value&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;receiver-org&#39;</span>
+    <span class="p">],</span>
+    <span class="n">data</span><span class="o">=</span><span class="p">[[</span>
+        <span class="n">transaction</span><span class="o">.</span><span class="n">getparent</span><span class="p">()</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;iati-identifier&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="p">,</span>
+        <span class="n">transaction</span><span class="o">.</span><span class="n">getparent</span><span class="p">()</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;activity-status&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;code&#39;</span><span class="p">),</span> <span class="p">[{</span>
+            <span class="n">country</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;code&#39;</span><span class="p">):</span>
+            <span class="n">country</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;percentage&#39;</span><span class="p">)</span>
+        <span class="p">}</span> <span class="k">for</span> <span class="n">country</span> <span class="ow">in</span> <span class="n">transaction</span><span class="o">.</span><span class="n">getparent</span><span class="p">()</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="s1">&#39;recipient-country&#39;</span><span class="p">)],</span>
+        <span class="p">[{</span>
+            <span class="n">region</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;code&#39;</span><span class="p">):</span> <span class="n">region</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;percentage&#39;</span><span class="p">)</span>
+        <span class="p">}</span> <span class="k">for</span> <span class="n">region</span> <span class="ow">in</span> <span class="n">transaction</span><span class="o">.</span><span class="n">getparent</span><span class="p">()</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="s1">&#39;recipient-region&#39;</span><span class="p">)],</span>
+        <span class="n">transaction</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;ref&#39;</span><span class="p">),</span>
+        <span class="n">transaction</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;humanitarian&#39;</span><span class="p">),</span>
+        <span class="n">transaction</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;transaction-type&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;code&#39;</span><span class="p">),</span>
+        <span class="n">transaction</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;transaction-date&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;iso-date&#39;</span><span class="p">),</span>
+        <span class="nb">float</span><span class="p">(</span><span class="n">transaction</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;value&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="p">),</span>
+        <span class="n">transaction</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;receiver-org&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;ref&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">transaction</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;receiver-org&#39;</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="kc">None</span>
+    <span class="p">]</span> <span class="k">for</span> <span class="n">transaction</span> <span class="ow">in</span> <span class="n">big_iati</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="s1">&#39;iati-activity/transaction&#39;</span><span class="p">)])</span>
+
+<span class="c1">#transaction_df.pivot_table(index=[&#39;activity-status&#39;, &#39;transaction-type&#39;], values=&#39;value&#39;).stack()</span>
+<span class="n">transaction_df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span>
+    <span class="p">[</span><span class="s1">&#39;recipient-regions&#39;</span><span class="p">,</span> <span class="s1">&#39;recipient-countries&#39;</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">describe</span><span class="p">(</span>
+        <span class="n">include</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-1-87e8f7b5ad9e&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> transaction_df = pd.DataFrame(
+</span><span class="ansi-green-intense-fg ansi-bold">      2</span>     columns=[
+<span class="ansi-green-intense-fg ansi-bold">      3</span>         <span class="ansi-blue-fg">&#39;iati-identifier&#39;</span><span class="ansi-blue-fg">,</span>
+<span class="ansi-green-intense-fg ansi-bold">      4</span>         <span class="ansi-blue-fg">&#39;activity-status&#39;</span><span class="ansi-blue-fg">,</span>
+<span class="ansi-green-intense-fg ansi-bold">      5</span>         <span class="ansi-blue-fg">&#39;recipient-countries&#39;</span><span class="ansi-blue-fg">,</span>
+
+<span class="ansi-red-fg">NameError</span>: name &#39;pd&#39; is not defined
+</pre></div></div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [237]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="n">writer</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">ExcelWriter</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">FINAL</span><span class="p">,</span> <span class="s1">&#39;canada_workbook.xlsx&#39;</span><span class="p">),</span> <span class="n">engine</span><span class="o">=</span><span class="s1">&#39;xlsxwriter&#39;</span><span class="p">)</span>
+
+<span class="n">transaction_df</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="n">writer</span><span class="p">,</span> <span class="n">sheet_name</span><span class="o">=</span><span class="s1">&#39;transactions&#39;</span><span class="p">)</span>
+
+<span class="n">writer</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Rory Scott.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

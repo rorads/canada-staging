@@ -1,0 +1,44 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Setup and Data Acquisition}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Imports and Housekeeping}{3}{section.2.1}
+\contentsline {section}{\numberline {2.2}Getting Original IATI Files}{4}{section.2.2}
+\contentsline {section}{\numberline {2.3}Merging IATI Files}{4}{section.2.3}
+\contentsline {chapter}{\numberline {3}Initial Validation}{7}{chapter.3}
+\contentsline {section}{\numberline {3.1}Schema Validation}{8}{section.3.1}
+\contentsline {section}{\numberline {3.2}Ruleset Validation}{9}{section.3.2}
+\contentsline {chapter}{\numberline {4}Assessing Compliance and Coverage}{11}{chapter.4}
+\contentsline {section}{\numberline {4.1}Initial Evaluation at Compliance and Coverage}{11}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Timeliness}{11}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Forward Looking Data}{12}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Coverage Of IATI Standard Elements}{12}{subsection.4.1.3}
+\contentsline {section}{\numberline {4.2}Detailed Analysis Method}{14}{section.4.2}
+\contentsline {section}{\numberline {4.3}Deliverable 3.1.1}{14}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Use Case}{14}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Recipient Countries}{16}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Participating Organisations}{17}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4}Deliverable 3.1.2}{19}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Use Case}{19}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Existence of Required Fields}{19}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}How the Required Fields are Related}{20}{subsection.4.4.3}
+\contentsline {section}{\numberline {4.5}Deliverable 3.1.3}{23}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Use Case}{23}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Other Identifier}{23}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}Transactions}{23}{subsection.4.5.3}
+\contentsline {subsubsection}{\numberline {4.5.3.1}Transaction Provider Organisation}{23}{subsubsection.4.5.3.1}
+\contentsline {subsubsection}{\numberline {4.5.3.2}Transaction Receiver Organisation}{24}{subsubsection.4.5.3.2}
+\contentsline {section}{\numberline {4.6}Deliverable 3.1.4}{25}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Use Case}{25}{subsection.4.6.1}
+\contentsline {section}{\numberline {4.7}Deliverable 3.1.5}{26}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Use Case}{26}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}Activity Level Recipient Locations}{26}{subsection.4.7.2}
+\contentsline {subsection}{\numberline {4.7.3}Transaction Level Recipient Locations}{26}{subsection.4.7.3}
+\contentsline {subsection}{\numberline {4.7.4}Locations Elements}{27}{subsection.4.7.4}
+\contentsline {section}{\numberline {4.8}Deliverable 3.1.6}{28}{section.4.8}
+\contentsline {subsection}{\numberline {4.8.1}Use Case}{28}{subsection.4.8.1}
+\contentsline {subsection}{\numberline {4.8.2}Budgets}{28}{subsection.4.8.2}
+\contentsline {subsection}{\numberline {4.8.3}Transactions}{29}{subsection.4.8.3}
+\contentsline {subsection}{\numberline {4.8.4}Planned Disbursements}{29}{subsection.4.8.4}
+\contentsline {subsection}{\numberline {4.8.5}In Combination}{29}{subsection.4.8.5}
+\contentsline {chapter}{\numberline {5}Appendix 1: Data Workbook}{31}{chapter.5}
+\contentsline {chapter}{\numberline {6}Indices and tables}{33}{chapter.6}

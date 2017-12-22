@@ -1,0 +1,850 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Setup &mdash; Global Affairs Canada - Compliance Report 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Global Affairs Canada - Compliance Report 1.0 documentation" href="../index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Global Affairs Canada - Compliance Report
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Setup-and-Data-Acquisition">Setup and Data Acquisition</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Imports-and-Housekeeping">Imports and Housekeeping</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Getting-Original-IATI-Files">Getting Original IATI Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Merging-IATI-Files">Merging IATI Files</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Initial-Validation">Initial Validation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Schema-Validation">Schema Validation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Ruleset-Validation">Ruleset Validation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Method-Overview">Method Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Deliverables">Deliverables</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Deliverable-3.1.1">Deliverable 3.1.1</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Recipient-Countries">Recipient Countries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Participating-Organisations">Participating Organisations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Deliverable-3.1.2">Deliverable 3.1.2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Existence-of-Required-Fields">Existence of Required Fields</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#How-the-Required-Fields-are-Related">How the Required Fields are Related</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Deliverable-3.1.3">Deliverable 3.1.3</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Other-Identifier">Other Identifier</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Transactions">Transactions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Transaction-Provider-Organisation">Transaction Provider Organisation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Transaction-Receiver-Organisation">Transaction Receiver Organisation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Deliverable-3.1.4">Deliverable 3.1.4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Deliverable-3.1.5">Deliverable 3.1.5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Deliverable-3.1.6">Deliverable 3.1.6</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Thematic-Evaluation">Thematic Evaluation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Prescriptions">Prescriptions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Global Affairs Canada - Compliance Report.html#Appendix-1:-Data-Workbook">Appendix 1: Data Workbook</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Global Affairs Canada - Compliance Report</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Setup</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/Archive/01_canada_get-data_RS.ipynb.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS for nbsphinx extension */
+
+/* remove conflicting styling from Sphinx themes */
+div.nbinput,
+div.nbinput div.prompt,
+div.nbinput div.input_area,
+div.nbinput div[class*=highlight],
+div.nbinput div[class*=highlight] pre,
+div.nboutput,
+div.nbinput div.prompt,
+div.nbinput div.output_area,
+div.nboutput div[class*=highlight],
+div.nboutput div[class*=highlight] pre {
+    background: none;
+    border: none;
+    padding: 0 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+/* avoid gaps between output lines */
+div.nboutput div[class*=highlight] pre {
+    line-height: normal;
+}
+
+/* input/output containers */
+div.nbinput,
+div.nboutput {
+    display: -webkit-flex;
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+}
+@media (max-width: 540px) {
+    div.nbinput,
+    div.nboutput {
+        flex-direction: column;
+    }
+}
+
+/* input container */
+div.nbinput {
+    padding-top: 5px;
+}
+
+/* last container */
+div.nblast {
+    padding-bottom: 5px;
+}
+
+/* input prompt */
+div.nbinput div.prompt pre {
+    color: #303F9F;
+}
+
+/* output prompt */
+div.nboutput div.prompt pre {
+    color: #D84315;
+}
+
+/* all prompts */
+div.nbinput div.prompt,
+div.nboutput div.prompt {
+    min-width: 8ex;
+    padding-top: 0.4em;
+    padding-right: 0.4em;
+    text-align: right;
+    flex: 0;
+}
+@media (max-width: 540px) {
+    div.nbinput div.prompt,
+    div.nboutput div.prompt {
+        text-align: left;
+        padding: 0.4em;
+    }
+    div.nboutput div.prompt.empty {
+        padding: 0;
+    }
+}
+
+/* disable scrollbars on prompts */
+div.nbinput div.prompt pre,
+div.nboutput div.prompt pre {
+    overflow: hidden;
+}
+
+/* input/output area */
+div.nbinput div.input_area,
+div.nboutput div.output_area {
+    padding: 0.4em;
+    -webkit-flex: 1;
+    flex: 1;
+    overflow: auto;
+}
+@media (max-width: 540px) {
+    div.nbinput div.input_area,
+    div.nboutput div.output_area {
+        width: 100%;
+    }
+}
+
+/* input area */
+div.nbinput div.input_area {
+    border: 1px solid #cfcfcf;
+    border-radius: 2px;
+    background: #f7f7f7;
+}
+
+/* override MathJax center alignment in output cells */
+div.nboutput div[class*=MathJax] {
+    text-align: left !important;
+}
+
+/* override sphinx.ext.pngmath center alignment in output cells */
+div.nboutput div.math p {
+    text-align: left;
+}
+
+/* standard error */
+div.nboutput div.output_area.stderr {
+    background: #fdd;
+}
+
+/* ANSI colors */
+.ansi-black-fg { color: #3E424D; }
+.ansi-black-bg { background-color: #3E424D; }
+.ansi-black-intense-fg { color: #282C36; }
+.ansi-black-intense-bg { background-color: #282C36; }
+.ansi-red-fg { color: #E75C58; }
+.ansi-red-bg { background-color: #E75C58; }
+.ansi-red-intense-fg { color: #B22B31; }
+.ansi-red-intense-bg { background-color: #B22B31; }
+.ansi-green-fg { color: #00A250; }
+.ansi-green-bg { background-color: #00A250; }
+.ansi-green-intense-fg { color: #007427; }
+.ansi-green-intense-bg { background-color: #007427; }
+.ansi-yellow-fg { color: #DDB62B; }
+.ansi-yellow-bg { background-color: #DDB62B; }
+.ansi-yellow-intense-fg { color: #B27D12; }
+.ansi-yellow-intense-bg { background-color: #B27D12; }
+.ansi-blue-fg { color: #208FFB; }
+.ansi-blue-bg { background-color: #208FFB; }
+.ansi-blue-intense-fg { color: #0065CA; }
+.ansi-blue-intense-bg { background-color: #0065CA; }
+.ansi-magenta-fg { color: #D160C4; }
+.ansi-magenta-bg { background-color: #D160C4; }
+.ansi-magenta-intense-fg { color: #A03196; }
+.ansi-magenta-intense-bg { background-color: #A03196; }
+.ansi-cyan-fg { color: #60C6C8; }
+.ansi-cyan-bg { background-color: #60C6C8; }
+.ansi-cyan-intense-fg { color: #258F8F; }
+.ansi-cyan-intense-bg { background-color: #258F8F; }
+.ansi-white-fg { color: #C5C1B4; }
+.ansi-white-bg { background-color: #C5C1B4; }
+.ansi-white-intense-fg { color: #A1A6B2; }
+.ansi-white-intense-bg { background-color: #A1A6B2; }
+
+.ansi-default-inverse-fg { color: #FFFFFF; }
+.ansi-default-inverse-bg { background-color: #000000; }
+
+.ansi-bold { font-weight: bold; }
+.ansi-underline { text-decoration: underline; }
+
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast,
+.nboutput.nblast {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast + .nbinput {
+    margin-top: -19px;
+}
+
+/* nice headers on first paragraph of info/warning boxes */
+.admonition .first {
+    margin: -12px;
+    padding: 6px 12px;
+    margin-bottom: 12px;
+    color: #fff;
+    line-height: 1;
+    display: block;
+}
+.admonition.warning .first {
+    background: #f0b37e;
+}
+.admonition.note .first {
+    background: #6ab0de;
+}
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+</style>
+<p><a class="reference internal" href="00_Index.html"><span class="doc">**⬆️ Back to the index notebook**</span></a></p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [9]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">HTML</span>
+<span class="n">HTML</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;&lt;script&gt;code_show=true; function code_toggle() { if (code_show){ $(&#39;div.input&#39;).hide(); } else { $(&#39;div.input&#39;).show(); } code_show = !code_show} $( document ).ready(code_toggle);&lt;/script&gt;&lt;form action=&quot;javascript:code_toggle()&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Click here to toggle on/off the raw code.&quot;&gt;&lt;/form&gt;&#39;&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>Out[9]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<script>code_show=true; function code_toggle() { if (code_show){ $('div.input').hide(); } else { $('div.input').show(); } code_show = !code_show} $( document ).ready(code_toggle);</script><form action="javascript:code_toggle()"><input type="submit" value="Click here to toggle on/off the raw code."></form></div>
+</div>
+<div class="section" id="Setup">
+<h1>Setup<a class="headerlink" href="#Setup" title="Permalink to this headline">¶</a></h1>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [140]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">requests</span> <span class="k">as</span> <span class="nn">rq</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [141]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="c1"># set directories</span>
+<span class="n">RAW</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&quot;..&quot;</span><span class="p">,</span><span class="s2">&quot;data&quot;</span><span class="p">,</span> <span class="s2">&quot;raw&quot;</span><span class="p">)</span>
+<span class="n">INTERMEDIATE</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&quot;..&quot;</span><span class="p">,</span><span class="s2">&quot;data&quot;</span><span class="p">,</span> <span class="s2">&quot;intermediate&quot;</span><span class="p">)</span>
+<span class="n">FINAL</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&quot;..&quot;</span><span class="p">,</span><span class="s2">&quot;data&quot;</span><span class="p">,</span> <span class="s2">&quot;final&quot;</span><span class="p">)</span>
+<span class="n">REGISTRY_ID</span> <span class="o">=</span> <span class="s1">&#39;gac-amc&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="Data-Aquisition">
+<h1>Data Aquisition<a class="headerlink" href="#Data-Aquisition" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="Summary-/-Stats">
+<h2>Summary / Stats<a class="headerlink" href="#Summary-/-Stats" title="Permalink to this headline">¶</a></h2>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [163]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="n">stats_data</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="n">stats_data</span><span class="p">[</span><span class="s1">&#39;timeliness.csv&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span>
+    <span class="s2">&quot;http://dashboard.iatistandard.org/timeliness_frequency.csv&quot;</span><span class="p">)</span>
+<span class="n">stats_data</span><span class="p">[</span><span class="s1">&#39;comprehensiveness_core.csv&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span>
+    <span class="s2">&quot;http://dashboard.iatistandard.org/comprehensiveness_core.csv&quot;</span><span class="p">)</span>
+<span class="n">stats_data</span><span class="p">[</span><span class="s1">&#39;comprehensiveness_financials.csv&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span>
+    <span class="s2">&quot;http://dashboard.iatistandard.org/comprehensiveness_financials.csv&quot;</span><span class="p">)</span>
+<span class="n">stats_data</span><span class="p">[</span><span class="s1">&#39;comprehensiveness_valueadded.csv&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span>
+    <span class="s2">&quot;http://dashboard.iatistandard.org/comprehensiveness_valueadded.csv&quot;</span><span class="p">)</span>
+<span class="c1"># similar approach for any dashboard tables</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [164]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="n">combined_comprehensiveness</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span>
+    <span class="n">on</span><span class="o">=</span><span class="s2">&quot;Publisher Registry Id&quot;</span><span class="p">,</span>
+    <span class="n">left</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span>
+        <span class="n">on</span><span class="o">=</span><span class="s2">&quot;Publisher Registry Id&quot;</span><span class="p">,</span>
+        <span class="n">left</span><span class="o">=</span><span class="n">stats_data</span><span class="p">[</span><span class="s1">&#39;comprehensiveness_core.csv&#39;</span><span class="p">],</span>
+        <span class="n">right</span><span class="o">=</span><span class="n">stats_data</span><span class="p">[</span><span class="s1">&#39;comprehensiveness_financials.csv&#39;</span><span class="p">]),</span>
+    <span class="n">right</span><span class="o">=</span><span class="n">stats_data</span><span class="p">[</span><span class="s1">&#39;comprehensiveness_valueadded.csv&#39;</span><span class="p">])</span>
+
+<span class="n">combined_comprehensiveness</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;Publisher Registry Id&#39;</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">combined_comprehensiveness</span><span class="o">.</span><span class="n">transpose</span><span class="p">()[</span><span class="n">REGISTRY_ID</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>Out[164]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>gac-amc</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Publisher Name_x</th>
+      <td>Canada - Global Affairs Canada | Affaires mond...</td>
+    </tr>
+    <tr>
+      <th>Version (with valid data)</th>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>Reporting-Org (with valid data)</th>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>Iati-identifier (with valid data)</th>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>Participating Organisation (with valid data)</th>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>Title (with valid data)</th>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>Description (with valid data)</th>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>Status (with valid data)</th>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>Activity Date (with valid data)</th>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>Sector (with valid data)</th>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>Country or Region (with valid data)</th>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>Average (with valid data)_x</th>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>Version (with any data)</th>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>Reporting-Org (with any data)</th>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>Iati-identifier (with any data)</th>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>Participating Organisation (with any data)</th>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>Title (with any data)</th>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>Description (with any data)</th>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>Status (with any data)</th>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>Activity Date (with any data)</th>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>Sector (with any data)</th>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>Country or Region (with any data)</th>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>Average (with any data)_x</th>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>Publisher Name_y</th>
+      <td>Canada - Global Affairs Canada | Affaires mond...</td>
+    </tr>
+    <tr>
+      <th>Transaction - Commitment (with valid data)</th>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>Transaction - Disbursement or Expenditure (with valid data)</th>
+      <td>87</td>
+    </tr>
+    <tr>
+      <th>Transaction - Traceability (with valid data)</th>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>Budget (with valid data)</th>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>Average (with valid data)_y</th>
+      <td>97</td>
+    </tr>
+    <tr>
+      <th>Transaction - Commitment (with any data)</th>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>Transaction - Disbursement or Expenditure (with any data)</th>
+      <td>87</td>
+    </tr>
+    <tr>
+      <th>Transaction - Traceability (with any data)</th>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>Budget (with any data)</th>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>Average (with any data)_y</th>
+      <td>97</td>
+    </tr>
+    <tr>
+      <th>Publisher Name</th>
+      <td>Canada - Global Affairs Canada | Affaires mond...</td>
+    </tr>
+    <tr>
+      <th>Contacts (with valid data)</th>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>Location Details (with valid data)</th>
+      <td>95</td>
+    </tr>
+    <tr>
+      <th>Geographic Coordinates (with valid data)</th>
+      <td>79</td>
+    </tr>
+    <tr>
+      <th>DAC Sectors (with valid data)</th>
+      <td>98</td>
+    </tr>
+    <tr>
+      <th>Capital Spend (with valid data)</th>
+      <td>23</td>
+    </tr>
+    <tr>
+      <th>Activity Documents (with valid data)</th>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>Aid Type (with valid data)</th>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>Recipient Language (with valid data)</th>
+      <td>55</td>
+    </tr>
+    <tr>
+      <th>Result/ Indicator (with valid data)</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Average (with valid data)</th>
+      <td>72</td>
+    </tr>
+    <tr>
+      <th>Contacts (with any data)</th>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>Location Details (with any data)</th>
+      <td>95</td>
+    </tr>
+    <tr>
+      <th>Geographic Coordinates (with any data)</th>
+      <td>95</td>
+    </tr>
+    <tr>
+      <th>DAC Sectors (with any data)</th>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>Capital Spend (with any data)</th>
+      <td>23</td>
+    </tr>
+    <tr>
+      <th>Activity Documents (with any data)</th>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>Aid Type (with any data)</th>
+      <td>100</td>
+    </tr>
+    <tr>
+      <th>Recipient Language (with any data)</th>
+      <td>55</td>
+    </tr>
+    <tr>
+      <th>Result/ Indicator (with any data)</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Average (with any data)</th>
+      <td>74</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [115]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">dataset</span> <span class="ow">in</span> <span class="n">stats_data</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="n">dataset</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">RAW</span><span class="p">,</span><span class="n">name</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="Raw-IATI">
+<h2>Raw IATI<a class="headerlink" href="#Raw-IATI" title="Permalink to this headline">¶</a></h2>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [157]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="c1"># File 1/2 (Active Activities)</span>
+<span class="n">request</span> <span class="o">=</span> <span class="n">rq</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;http://w05.international.gc.ca/projectbrowser-banqueprojets/iita-iati/dfatd-maecd_activit_status_2_3.xml&quot;</span><span class="p">)</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">RAW</span><span class="p">,</span> <span class="s2">&quot;status_2-3.xml&quot;</span><span class="p">),</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">out_file</span><span class="p">:</span>
+  <span class="n">out_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none"><div class="highlight"><pre>
+<span></span>In [158]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3"><div class="highlight"><pre>
+<span></span><span class="c1"># File 2/2 (Completed Activities)</span>
+<span class="n">request</span> <span class="o">=</span> <span class="n">rq</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;http://w05.international.gc.ca/projectbrowser-banqueprojets/iita-iati/dfatd-maecd_activit_status_4.xml&quot;</span><span class="p">)</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">RAW</span><span class="p">,</span> <span class="s2">&quot;status_4.xml&quot;</span><span class="p">),</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">out_file</span><span class="p">:</span>
+  <span class="n">out_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Rory Scott.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
